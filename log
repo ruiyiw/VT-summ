@@ -1,0 +1,2525 @@
+Job Id: 334165.sccpbs002
+    Job_Name = endeun17
+    Job_Owner = xzli@sccdlb001
+    resources_used.cpupercent = 798
+    resources_used.cput = 1907:43:16
+    resources_used.mem = 143338868kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 541347336kb
+    resources_used.walltime = 238:54:56
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Jul 27 16:25:14 2021
+    Error_Path = sccdlb001:/share03/xzli/uxlm/endeun17.e334165
+    exec_host = sccdlb022/0*0
+    exec_vnode = (sccdlb022[0]:ngpus=1:ncpus=1+sccdlb022[1]:ngpus=1+sccdlb022[2
+	]:ngpus=1+sccdlb022[3]:ngpus=1+sccdlb022[4]:ngpus=1+sccdlb022[5]:ngpus=
+	1+sccdlb022[6]:ngpus=1+sccdlb022[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:11 2021
+    Output_Path = sccdlb001:/share03/xzli/uxlm/./logs/qsub_endeun17.log
+    Priority = 0
+    qtime = Tue Jul 27 16:25:14 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Tue Jul 27 16:25:15 2021
+    session_id = 29188
+    jobdir = /home/MLTL-INTERN/xzli
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/xzli,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xzli,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/xzli/cmake-3.12.2/bin:/shar
+	e03/xzli/sentencepiece/bin:/share03/xzli/miniconda3/envs/xlm/bin:/share
+	03/xzli/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/b
+	in:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL-INTERN/xzli/.local
+	/bin:/home/MLTL-INTERN/xzli/bin,PBS_O_MAIL=/var/spool/mail/xzli,
+	PBS_O_SHELL=/bin/bash,PBS_O_WORKDIR=/share03/xzli/uxlm,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Jul 27 at 16:25 on (sccdlb022[0]:ngpus=1:ncpus=1+s
+	ccdlb022[1]:ngpus=1+sccdlb022[2]:ngpus=1+sccdlb022[3]:ngpus=1+sccdlb022
+	[4]:ngpus=1+sccdlb022[5]:ngpus=1+sccdlb022[6]:ngpus=1+sccdlb022[7]:ngpu
+	s=1)
+    etime = Tue Jul 27 16:25:14 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N endeun17 -l ngpus=8 scripts/const_unmt/ru
+	n_de-en_unmt_v17.sh -j oe -o ./logs/qsub_endeun17.log
+    project = _pbs_project_default
+
+Job Id: 334470.sccpbs002
+    Job_Name = r4
+    Job_Owner = xlwang@sccdlb001
+    resources_used.cpupercent = 2141
+    resources_used.cput = 3531:45:26
+    resources_used.mem = 21143692kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 233275988kb
+    resources_used.walltime = 167:02:53
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Jul 30 16:16:40 2021
+    Error_Path = sccdlb001:/share03/xlwang/NLP/speech/working/flashlight/runs/r
+	Base-g4/r4.e334470
+    exec_host = sccdlb013/0*0
+    exec_vnode = (sccdlb013[0]:ngpus=1:ncpus=2+sccdlb013[1]:ngpus=1:ncpus=2+scc
+	dlb013[2]:ngpus=1:ncpus=2+sccdlb013[3]:ngpus=1:ncpus=2+sccdlb013[4]:ngp
+	us=1:ncpus=2+sccdlb013[5]:ngpus=1:ncpus=2+sccdlb013[6]:ngpus=1:ncpus=2+
+	sccdlb013[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = doe
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:32 2021
+    Output_Path = sccdlb001:/share03/xlwang/NLP/speech/working/flashlight/runs/
+	rBase-g4/r4.o334470
+    Priority = 0
+    qtime = Fri Jul 30 16:16:40 2021
+    Rerunable = True
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = ncpus=16:ngpus=8
+    stime = Fri Jul 30 16:16:40 2021
+    session_id = 29051
+    jobdir = /home/MLTL/xlwang
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/xlwang,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xlwang,
+	PBS_O_PATH=/share03/xlwang/local/cuda-10.2/bin:/share03/xlwang/local/b
+	in/:/share03/xlwang/codes/bin/:/home/MLTL/xlwang/.local/bin:/share03/xl
+	wang/codes/exLuaCodes/torch/distro/install/bin:/usr/lib64/qt-3.3/bin:/u
+	sr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL
+	/xlwang/.local/bin:/home/MLTL/xlwang/bin,
+	PBS_O_MAIL=/var/spool/mail/xlwang,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/xlwang/NLP/speech/working/flashlight/runs/rBase
+	-g4,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Jul 30 at 16:16 on (sccdlb013[0]:ngpus=1:ncpus=2+s
+	ccdlb013[1]:ngpus=1:ncpus=2+sccdlb013[2]:ngpus=1:ncpus=2+sccdlb013[3]:n
+	gpus=1:ncpus=2+sccdlb013[4]:ngpus=1:ncpus=2+sccdlb013[5]:ngpus=1:ncpus=
+	2+sccdlb013[6]:ngpus=1:ncpus=2+sccdlb013[7]:n...
+    etime = Fri Jul 30 16:16:40 2021
+    run_count = 1
+    Submit_arguments = -k doe -l select=ncpus=16:ngpus=8 -q full-gpu r4
+    project = _pbs_project_default
+
+Job Id: 336536.sccpbs002
+    Job_Name = deenun18
+    Job_Owner = xzli@sccdlb001
+    resources_used.cpupercent = 798
+    resources_used.cput = 1146:35:16
+    resources_used.mem = 139052540kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 540491884kb
+    resources_used.walltime = 143:35:54
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Sat Jul 31 15:44:19 2021
+    Error_Path = sccdlb001:/share03/xzli/uxlm/deenun18.e336536
+    exec_host = sccdlb004/1*0
+    exec_vnode = (sccdlb004[0]:ngpus=1:ncpus=1+sccdlb004[1]:ngpus=1+sccdlb004[2
+	]:ngpus=1+sccdlb004[3]:ngpus=1+sccdlb004[4]:ngpus=1+sccdlb004[5]:ngpus=
+	1+sccdlb004[6]:ngpus=1+sccdlb004[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:11 2021
+    Output_Path = sccdlb001:/share03/xzli/uxlm/./logs/qsub_deenun18.log
+    Priority = 0
+    qtime = Sat Jul 31 15:44:19 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Sat Jul 31 15:44:19 2021
+    session_id = 24928
+    jobdir = /home/MLTL-INTERN/xzli
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/xzli,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xzli,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/xzli/cmake-3.12.2/bin:/shar
+	e03/xzli/sentencepiece/bin:/share03/xzli/miniconda3/bin:/share03/xzli/m
+	iniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/l
+	ocal/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL-INTERN/xzli/.local/bin:/hom
+	e/MLTL-INTERN/xzli/bin,PBS_O_MAIL=/var/spool/mail/xzli,
+	PBS_O_SHELL=/bin/bash,PBS_O_WORKDIR=/share03/xzli/uxlm,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Sat Jul 31 at 15:44 on (sccdlb004[0]:ngpus=1:ncpus=1+s
+	ccdlb004[1]:ngpus=1+sccdlb004[2]:ngpus=1+sccdlb004[3]:ngpus=1+sccdlb004
+	[4]:ngpus=1+sccdlb004[5]:ngpus=1+sccdlb004[6]:ngpus=1+sccdlb004[7]:ngpu
+	s=1)
+    etime = Sat Jul 31 15:44:19 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N deenun18 -l ngpus=8 scripts/const_unmt/ru
+	n_de-en_unmt_v18.sh -j oe -o ./logs/qsub_deenun18.log
+    project = _pbs_project_default
+
+Job Id: 336538.sccpbs002
+    Job_Name = lr0.8
+    Job_Owner = xlwang@sccdlb001
+    resources_used.cpupercent = 3471
+    resources_used.cput = 4914:22:39
+    resources_used.mem = 39906952kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 470719364kb
+    resources_used.walltime = 143:03:47
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Sat Jul 31 16:15:20 2021
+    Error_Path = sccdlb001:/share03/xlwang/NLP/speech/working/flashlight/runs/r
+	Base-g8-lr0.8/lr0.8.e336538
+    exec_host = sccdlb011/0*0
+    exec_vnode = (sccdlb011[0]:ngpus=1:ncpus=2+sccdlb011[1]:ngpus=1:ncpus=2+scc
+	dlb011[2]:ngpus=1:ncpus=2+sccdlb011[3]:ngpus=1:ncpus=2+sccdlb011[4]:ngp
+	us=1:ncpus=2+sccdlb011[5]:ngpus=1:ncpus=2+sccdlb011[6]:ngpus=1:ncpus=2+
+	sccdlb011[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = doe
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:05 2021
+    Output_Path = sccdlb001:/share03/xlwang/NLP/speech/working/flashlight/runs/
+	rBase-g8-lr0.8/lr0.8.o336538
+    Priority = 0
+    qtime = Sat Jul 31 16:15:20 2021
+    Rerunable = True
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Sat Jul 31 16:15:20 2021
+    session_id = 3935
+    jobdir = /home/MLTL/xlwang
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/xlwang,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xlwang,
+	PBS_O_PATH=/opt/OPENMPI/openmpi-4.0.0/bin:/share03/xlwang/local/cuda-1
+	0.2/bin:/share03/xlwang/local/bin/:/share03/xlwang/codes/bin/:/home/MLT
+	L/xlwang/.local/bin:/share03/xlwang/codes/exLuaCodes/torch/distro/insta
+	ll/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/opt/pbs/bin:/home/MLTL/xlwang/.local/bin:/home/MLTL/xlwang/bin
+	,PBS_O_MAIL=/var/spool/mail/xlwang,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/xlwang/NLP/speech/working/flashlight/runs/rBase
+	-g8-lr0.8,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Sat Jul 31 at 16:15 on (sccdlb011[0]:ngpus=1:ncpus=2+s
+	ccdlb011[1]:ngpus=1:ncpus=2+sccdlb011[2]:ngpus=1:ncpus=2+sccdlb011[3]:n
+	gpus=1:ncpus=2+sccdlb011[4]:ngpus=1:ncpus=2+sccdlb011[5]:ngpus=1:ncpus=
+	2+sccdlb011[6]:ngpus=1:ncpus=2+sccdlb011[7]:n...
+    etime = Sat Jul 31 16:15:20 2021
+    run_count = 1
+    Submit_arguments = -k doe -l select=1:ncpus=16:ngpus=8 -q full-gpu lr0.8
+    project = _pbs_project_default
+
+Job Id: 337468.sccpbs002
+    Job_Name = enroun1
+    Job_Owner = xzli@sccdlb001
+    resources_used.cpupercent = 798
+    resources_used.cput = 952:10:38
+    resources_used.mem = 106930116kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 545218540kb
+    resources_used.walltime = 119:59:04
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Sun Aug  1 15:20:14 2021
+    Error_Path = sccdlb001:/share03/xzli/uxlm/enroun1.e337468
+    exec_host = sccdlb015/1*0
+    exec_vnode = (sccdlb015[0]:ngpus=1:ncpus=1+sccdlb015[1]:ngpus=1+sccdlb015[2
+	]:ngpus=1+sccdlb015[3]:ngpus=1+sccdlb015[4]:ngpus=1+sccdlb015[5]:ngpus=
+	1+sccdlb015[6]:ngpus=1+sccdlb015[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:19 2021
+    Output_Path = sccdlb001:/share03/xzli/uxlm/./logs/qsub_enroun1.log
+    Priority = 0
+    qtime = Sun Aug  1 15:20:14 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Sun Aug  1 15:20:15 2021
+    session_id = 31189
+    jobdir = /home/MLTL-INTERN/xzli
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/xzli,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xzli,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/xzli/cmake-3.12.2/bin:/shar
+	e03/xzli/sentencepiece/bin:/share03/xzli/miniconda3/envs/xlm/bin:/share
+	03/xzli/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/b
+	in:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL-INTERN/xzli/.local
+	/bin:/home/MLTL-INTERN/xzli/bin,PBS_O_MAIL=/var/spool/mail/xzli,
+	PBS_O_SHELL=/bin/bash,PBS_O_WORKDIR=/share03/xzli/uxlm,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Sun Aug 01 at 15:20 on (sccdlb015[0]:ngpus=1:ncpus=1+s
+	ccdlb015[1]:ngpus=1+sccdlb015[2]:ngpus=1+sccdlb015[3]:ngpus=1+sccdlb015
+	[4]:ngpus=1+sccdlb015[5]:ngpus=1+sccdlb015[6]:ngpus=1+sccdlb015[7]:ngpu
+	s=1)
+    etime = Sun Aug  1 15:20:14 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N enroun1 -l ngpus=8 scripts/const_unmt/run
+	_en-ro_unmt_v1.sh -j oe -o ./logs/qsub_enroun1.log
+    project = _pbs_project_default
+
+Job Id: 337557.sccpbs002
+    Job_Name = rx4-0.8
+    Job_Owner = xlwang@sccdlb001
+    resources_used.cpupercent = 14276
+    resources_used.cput = 15836:27:31
+    resources_used.mem = 145881272kb
+    resources_used.ncpus = 64
+    resources_used.vmem = 450149124kb
+    resources_used.walltime = 113:28:44
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Sun Aug  1 21:50:05 2021
+    Error_Path = sccdlb001:/share03/xlwang/NLP/speech/working/flashlight/runs/r
+	Base-g8x4-lr0.8/rx4-0.8.e337557
+    exec_host = sccdlb012/0*0+sccdlb014/0*0+sccdlb018/0*0+sccdlb054/0*0
+    exec_vnode = (sccdlb012[0]:ngpus=1:ncpus=2+sccdlb012[1]:ngpus=1:ncpus=2+scc
+	dlb012[2]:ngpus=1:ncpus=2+sccdlb012[3]:ngpus=1:ncpus=2+sccdlb012[4]:ngp
+	us=1:ncpus=2+sccdlb012[5]:ngpus=1:ncpus=2+sccdlb012[6]:ngpus=1:ncpus=2+
+	sccdlb012[7]:ngpus=1:ncpus=2)+(sccdlb014[0]:ngpus=1:ncpus=2+sccdlb014[1
+	]:ngpus=1:ncpus=2+sccdlb014[2]:ngpus=1:ncpus=2+sccdlb014[3]:ngpus=1:ncp
+	us=2+sccdlb014[4]:ngpus=1:ncpus=2+sccdlb014[5]:ngpus=1:ncpus=2+sccdlb01
+	4[6]:ngpus=1:ncpus=2+sccdlb014[7]:ngpus=1:ncpus=2)+(sccdlb018[0]:ngpus=
+	1:ncpus=2+sccdlb018[1]:ngpus=1:ncpus=2+sccdlb018[2]:ngpus=1:ncpus=2+scc
+	dlb018[3]:ngpus=1:ncpus=2+sccdlb018[4]:ngpus=1:ncpus=2+sccdlb018[5]:ngp
+	us=1:ncpus=2+sccdlb018[6]:ngpus=1:ncpus=2+sccdlb018[7]:ngpus=1:ncpus=2)
+	+(sccdlb054[0]:ngpus=1:ncpus=2+sccdlb054[1]:ngpus=1:ncpus=2+sccdlb054[2
+	]:ngpus=1:ncpus=2+sccdlb054[3]:ngpus=1:ncpus=2+sccdlb054[4]:ngpus=1:ncp
+	us=2+sccdlb054[5]:ngpus=1:ncpus=2+sccdlb054[6]:ngpus=1:ncpus=2+sccdlb05
+	4[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = doe
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:48 2021
+    Output_Path = sccdlb001:/share03/xlwang/NLP/speech/working/flashlight/runs/
+	rBase-g8x4-lr0.8/rx4-0.8.o337557
+    Priority = 0
+    qtime = Sun Aug  1 21:50:05 2021
+    Rerunable = True
+    Resource_List.ncpus = 64
+    Resource_List.ngpus = 32
+    Resource_List.nodect = 4
+    Resource_List.place = free
+    Resource_List.select = 4:ncpus=16:ngpus=8
+    stime = Sun Aug  1 21:50:05 2021
+    session_id = 34665
+    jobdir = /home/MLTL/xlwang
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/xlwang,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xlwang,
+	PBS_O_PATH=/share03/xlwang/local/cuda-10.2/bin:/share03/xlwang/local/b
+	in/:/share03/xlwang/codes/bin/:/home/MLTL/xlwang/.local/bin:/share03/xl
+	wang/codes/exLuaCodes/torch/distro/install/bin:/usr/lib64/qt-3.3/bin:/u
+	sr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL
+	/xlwang/.local/bin:/home/MLTL/xlwang/bin,
+	PBS_O_MAIL=/var/spool/mail/xlwang,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/xlwang/NLP/speech/working/flashlight/runs/rBase
+	-g8x4-lr0.8,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Sun Aug 01 at 21:50 on (sccdlb012[0]:ngpus=1:ncpus=2+s
+	ccdlb012[1]:ngpus=1:ncpus=2+sccdlb012[2]:ngpus=1:ncpus=2+sccdlb012[3]:n
+	gpus=1:ncpus=2+sccdlb012[4]:ngpus=1:ncpus=2+sccdlb012[5]:ngpus=1:ncpus=
+	2+sccdlb012[6]:ngpus=1:ncpus=2+sccdlb012[7]:n...
+    etime = Sun Aug  1 21:50:05 2021
+    run_count = 1
+    Submit_arguments = -k doe -l select=4:ncpus=16:ngpus=8 -q full-gpu rx4-0.8
+    project = _pbs_project_default
+
+Job Id: 337678.sccpbs002
+    Job_Name = enfrun11
+    Job_Owner = xzli@sccdlb001
+    resources_used.cpupercent = 798
+    resources_used.cput = 613:44:49
+    resources_used.mem = 141742216kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 544316200kb
+    resources_used.walltime = 76:51:56
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Aug  3 10:27:51 2021
+    Error_Path = sccdlb001:/share03/xzli/uxlm/enfrun11.e337678
+    exec_host = sccdlb057/0*0
+    exec_vnode = (sccdlb057[0]:ngpus=1:ncpus=1+sccdlb057[1]:ngpus=1+sccdlb057[2
+	]:ngpus=1+sccdlb057[3]:ngpus=1+sccdlb057[4]:ngpus=1+sccdlb057[5]:ngpus=
+	1+sccdlb057[6]:ngpus=1+sccdlb057[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:45 2021
+    Output_Path = sccdlb001:/share03/xzli/uxlm/./logs/qsub_enfrun11.log
+    Priority = 0
+    qtime = Tue Aug  3 10:27:51 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Tue Aug  3 10:27:51 2021
+    session_id = 11278
+    jobdir = /home/MLTL-INTERN/xzli
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/xzli,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=xzli,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/xzli/cmake-3.12.2/bin:/shar
+	e03/xzli/sentencepiece/bin:/share03/xzli/miniconda3/envs/xlm/bin:/share
+	03/xzli/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/b
+	in:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL-INTERN/xzli/.local
+	/bin:/home/MLTL-INTERN/xzli/bin,PBS_O_MAIL=/var/spool/mail/xzli,
+	PBS_O_SHELL=/bin/bash,PBS_O_WORKDIR=/share03/xzli/uxlm,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Aug 03 at 10:27 on (sccdlb057[0]:ngpus=1:ncpus=1+s
+	ccdlb057[1]:ngpus=1+sccdlb057[2]:ngpus=1+sccdlb057[3]:ngpus=1+sccdlb057
+	[4]:ngpus=1+sccdlb057[5]:ngpus=1+sccdlb057[6]:ngpus=1+sccdlb057[7]:ngpu
+	s=1)
+    etime = Tue Aug  3 10:27:51 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N enfrun11 -l ngpus=8 scripts/const_unmt/ru
+	n_en-fr_unmt_v11.sh -j oe -o ./logs/qsub_enfrun11.log
+    project = _pbs_project_default
+
+Job Id: 337701.sccpbs002
+    Job_Name = pre_chrf
+    Job_Owner = rraphael@sccdlb001
+    resources_used.cpupercent = 290
+    resources_used.cput = 165:07:17
+    resources_used.mem = 530641532kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1469105932kb
+    resources_used.walltime = 70:58:28
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Aug  3 16:20:33 2021
+    Error_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_chrf.e3377
+	01
+    exec_host = sccdlb021/0*0
+    exec_vnode = (sccdlb021[0]:ngpus=1:ncpus=2+sccdlb021[1]:ngpus=1:ncpus=2+scc
+	dlb021[2]:ngpus=1:ncpus=2+sccdlb021[3]:ngpus=1:ncpus=2+sccdlb021[4]:ngp
+	us=1:ncpus=2+sccdlb021[5]:ngpus=1:ncpus=2+sccdlb021[6]:ngpus=1:ncpus=2+
+	sccdlb021[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:59 2021
+    Output_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_chrf.o337
+	701
+    Priority = 0
+    qtime = Tue Aug  3 16:20:33 2021
+    Rerunable = False
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Tue Aug  3 16:20:33 2021
+    session_id = 18284
+    jobdir = /home/MLTL/rraphael
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/rraphael,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=rraphael,
+	PBS_O_PATH=/home/MLTL/rraphael/Tools/anaconda3/envs/pytorch/bin:/home/
+	MLTL/rraphael/Tools/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local
+	/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/share03/securityL
+	2/PBStools:/home/MLTL/rraphael/.local/bin:/home/MLTL/rraphael/bin,
+	PBS_O_MAIL=/var/spool/mail/rraphael,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/rraphael/Experiments/wmt21qe,
+	PBS_O_SYSTEM=Linux,SEED=666,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Aug 03 at 16:20 on (sccdlb021[0]:ngpus=1:ncpus=2+s
+	ccdlb021[1]:ngpus=1:ncpus=2+sccdlb021[2]:ngpus=1:ncpus=2+sccdlb021[3]:n
+	gpus=1:ncpus=2+sccdlb021[4]:ngpus=1:ncpus=2+sccdlb021[5]:ngpus=1:ncpus=
+	2+sccdlb021[6]:ngpus=1:ncpus=2+sccdlb021[7]:n...
+    etime = Tue Aug  3 16:20:33 2021
+    run_count = 1
+    Submit_arguments = -r n -N pre_chrf -q full-gpu -lncpus=16 -lngpus=8 -v SEE
+	D=666 pbs/pretrain_chrf.sh
+    project = _pbs_project_default
+
+Job Id: 337703.sccpbs002
+    Job_Name = pre_bleu
+    Job_Owner = rraphael@sccdlb001
+    resources_used.cpupercent = 296
+    resources_used.cput = 165:15:43
+    resources_used.mem = 531647284kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1470303280kb
+    resources_used.walltime = 70:57:45
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Aug  3 16:20:42 2021
+    Error_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_bleu.e3377
+	03
+    exec_host = sccdlb059/0*0
+    exec_vnode = (sccdlb059[0]:ngpus=1:ncpus=2+sccdlb059[1]:ngpus=1:ncpus=2+scc
+	dlb059[2]:ngpus=1:ncpus=2+sccdlb059[3]:ngpus=1:ncpus=2+sccdlb059[4]:ngp
+	us=1:ncpus=2+sccdlb059[5]:ngpus=1:ncpus=2+sccdlb059[6]:ngpus=1:ncpus=2+
+	sccdlb059[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:25 2021
+    Output_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_bleu.o337
+	703
+    Priority = 0
+    qtime = Tue Aug  3 16:20:42 2021
+    Rerunable = False
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Tue Aug  3 16:20:42 2021
+    session_id = 32292
+    jobdir = /home/MLTL/rraphael
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/rraphael,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=rraphael,
+	PBS_O_PATH=/home/MLTL/rraphael/Tools/anaconda3/envs/pytorch/bin:/home/
+	MLTL/rraphael/Tools/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local
+	/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/share03/securityL
+	2/PBStools:/home/MLTL/rraphael/.local/bin:/home/MLTL/rraphael/bin,
+	PBS_O_MAIL=/var/spool/mail/rraphael,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/rraphael/Experiments/wmt21qe,
+	PBS_O_SYSTEM=Linux,SEED=666,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Aug 03 at 16:20 on (sccdlb059[0]:ngpus=1:ncpus=2+s
+	ccdlb059[1]:ngpus=1:ncpus=2+sccdlb059[2]:ngpus=1:ncpus=2+sccdlb059[3]:n
+	gpus=1:ncpus=2+sccdlb059[4]:ngpus=1:ncpus=2+sccdlb059[5]:ngpus=1:ncpus=
+	2+sccdlb059[6]:ngpus=1:ncpus=2+sccdlb059[7]:n...
+    etime = Tue Aug  3 16:20:42 2021
+    run_count = 1
+    Submit_arguments = -r n -N pre_bleu -q full-gpu -lncpus=16 -lngpus=8 -v SEE
+	D=666 pbs/pretrain_bleu.sh
+    project = _pbs_project_default
+
+Job Id: 337709.sccpbs002
+    Job_Name = pre_ter
+    Job_Owner = rraphael@sccdlb001
+    resources_used.cpupercent = 275
+    resources_used.cput = 160:41:23
+    resources_used.mem = 529757044kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1468297436kb
+    resources_used.walltime = 69:12:17
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Aug  3 18:06:55 2021
+    Error_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_ter.e33770
+	9
+    exec_host = sccdlb062/0*0
+    exec_vnode = (sccdlb062[0]:ngpus=1:ncpus=2+sccdlb062[1]:ngpus=1:ncpus=2+scc
+	dlb062[2]:ngpus=1:ncpus=2+sccdlb062[3]:ngpus=1:ncpus=2+sccdlb062[4]:ngp
+	us=1:ncpus=2+sccdlb062[5]:ngpus=1:ncpus=2+sccdlb062[6]:ngpus=1:ncpus=2+
+	sccdlb062[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:12 2021
+    Output_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_ter.o3377
+	09
+    Priority = 0
+    qtime = Tue Aug  3 18:06:55 2021
+    Rerunable = False
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Tue Aug  3 18:06:56 2021
+    session_id = 19811
+    jobdir = /home/MLTL/rraphael
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/rraphael,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=rraphael,
+	PBS_O_PATH=/home/MLTL/rraphael/Tools/anaconda3/envs/pytorch/bin:/home/
+	MLTL/rraphael/Tools/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local
+	/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/share03/securityL
+	2/PBStools:/home/MLTL/rraphael/.local/bin:/home/MLTL/rraphael/bin,
+	PBS_O_MAIL=/var/spool/mail/rraphael,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/rraphael/Experiments/wmt21qe,
+	PBS_O_SYSTEM=Linux,SEED=666,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Aug 03 at 18:06 on (sccdlb062[0]:ngpus=1:ncpus=2+s
+	ccdlb062[1]:ngpus=1:ncpus=2+sccdlb062[2]:ngpus=1:ncpus=2+sccdlb062[3]:n
+	gpus=1:ncpus=2+sccdlb062[4]:ngpus=1:ncpus=2+sccdlb062[5]:ngpus=1:ncpus=
+	2+sccdlb062[6]:ngpus=1:ncpus=2+sccdlb062[7]:n...
+    etime = Tue Aug  3 18:06:55 2021
+    run_count = 1
+    Submit_arguments = -r n -N pre_ter -q full-gpu -lncpus=16 -lngpus=8 -v SEED
+	=666 pbs/pretrain_ter.sh
+    project = _pbs_project_default
+
+Job Id: 337729.sccpbs002
+    Job_Name = pre_tok
+    Job_Owner = rraphael@sccdlb001
+    resources_used.cpupercent = 256
+    resources_used.cput = 157:40:07
+    resources_used.mem = 531678084kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1483623136kb
+    resources_used.walltime = 68:02:02
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Aug  3 19:16:33 2021
+    Error_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_tok.e33772
+	9
+    exec_host = sccdlb063/0*0
+    exec_vnode = (sccdlb063[0]:ngpus=1:ncpus=2+sccdlb063[1]:ngpus=1:ncpus=2+scc
+	dlb063[2]:ngpus=1:ncpus=2+sccdlb063[3]:ngpus=1:ncpus=2+sccdlb063[4]:ngp
+	us=1:ncpus=2+sccdlb063[5]:ngpus=1:ncpus=2+sccdlb063[6]:ngpus=1:ncpus=2+
+	sccdlb063[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:33 2021
+    Output_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_tok.o3377
+	29
+    Priority = 0
+    qtime = Tue Aug  3 19:16:33 2021
+    Rerunable = False
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Tue Aug  3 19:16:33 2021
+    session_id = 32023
+    jobdir = /home/MLTL/rraphael
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/rraphael,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=rraphael,
+	PBS_O_PATH=/home/MLTL/rraphael/Tools/anaconda3/envs/pytorch/bin:/home/
+	MLTL/rraphael/Tools/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local
+	/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/share03/securityL
+	2/PBStools:/home/MLTL/rraphael/.local/bin:/home/MLTL/rraphael/bin,
+	PBS_O_MAIL=/var/spool/mail/rraphael,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/rraphael/Experiments/wmt21qe,
+	PBS_O_SYSTEM=Linux,SEED=666,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Aug 03 at 19:16 on (sccdlb063[0]:ngpus=1:ncpus=2+s
+	ccdlb063[1]:ngpus=1:ncpus=2+sccdlb063[2]:ngpus=1:ncpus=2+sccdlb063[3]:n
+	gpus=1:ncpus=2+sccdlb063[4]:ngpus=1:ncpus=2+sccdlb063[5]:ngpus=1:ncpus=
+	2+sccdlb063[6]:ngpus=1:ncpus=2+sccdlb063[7]:n...
+    etime = Tue Aug  3 19:16:33 2021
+    run_count = 1
+    Submit_arguments = -r n -N pre_tok -q full-gpu -lncpus=16 -lngpus=8 -v SEED
+	=666 pbs/pretrain_tok.sh
+    project = _pbs_project_default
+
+Job Id: 337731.sccpbs002
+    Job_Name = pre_sent
+    Job_Owner = rraphael@sccdlb001
+    resources_used.cpupercent = 296
+    resources_used.cput = 156:16:00
+    resources_used.mem = 530752352kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1483976452kb
+    resources_used.walltime = 67:00:32
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Tue Aug  3 20:18:51 2021
+    Error_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_sent.e3377
+	31
+    exec_host = sccdlb002/0*0
+    exec_vnode = (sccdlb002[0]:ngpus=1:ncpus=2+sccdlb002[1]:ngpus=1:ncpus=2+scc
+	dlb002[2]:ngpus=1:ncpus=2+sccdlb002[3]:ngpus=1:ncpus=2+sccdlb002[4]:ngp
+	us=1:ncpus=2+sccdlb002[5]:ngpus=1:ncpus=2+sccdlb002[6]:ngpus=1:ncpus=2+
+	sccdlb002[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:21 2021
+    Output_Path = sccdlb001:/share03/rraphael/Experiments/wmt21qe/pre_sent.o337
+	731
+    Priority = 0
+    qtime = Tue Aug  3 20:18:51 2021
+    Rerunable = False
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Tue Aug  3 20:18:51 2021
+    session_id = 31415
+    jobdir = /home/MLTL/rraphael
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/rraphael,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=rraphael,
+	PBS_O_PATH=/home/MLTL/rraphael/Tools/anaconda3/envs/pytorch/bin:/home/
+	MLTL/rraphael/Tools/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local
+	/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/share03/securityL
+	2/PBStools:/home/MLTL/rraphael/.local/bin:/home/MLTL/rraphael/bin,
+	PBS_O_MAIL=/var/spool/mail/rraphael,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/rraphael/Experiments/wmt21qe,
+	PBS_O_SYSTEM=Linux,SEED=666,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Tue Aug 03 at 20:18 on (sccdlb002[0]:ngpus=1:ncpus=2+s
+	ccdlb002[1]:ngpus=1:ncpus=2+sccdlb002[2]:ngpus=1:ncpus=2+sccdlb002[3]:n
+	gpus=1:ncpus=2+sccdlb002[4]:ngpus=1:ncpus=2+sccdlb002[5]:ngpus=1:ncpus=
+	2+sccdlb002[6]:ngpus=1:ncpus=2+sccdlb002[7]:n...
+    etime = Tue Aug  3 20:18:51 2021
+    run_count = 1
+    Submit_arguments = -r n -N pre_sent -q full-gpu -lncpus=16 -lngpus=8 -v SEE
+	D=666 pbs/pretrain_sent.sh
+    project = _pbs_project_default
+
+Job Id: 337768.sccpbs002
+    Job_Name = big
+    Job_Owner = yiran-wang@sccdlb001
+    resources_used.cpupercent = 825
+    resources_used.cput = 390:23:17
+    resources_used.mem = 39168092kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1168336920kb
+    resources_used.walltime = 47:54:21
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Wed Aug  4 15:24:56 2021
+    Error_Path = sccdlb001:/home/MLTL/yiran-wang/PycharmProjects/mt-preprocess/
+	big.e337768
+    exec_host = sccdlb009/0*0
+    exec_vnode = (sccdlb009[0]:ngpus=1:ncpus=2+sccdlb009[1]:ngpus=1:ncpus=2+scc
+	dlb009[2]:ngpus=1:ncpus=2+sccdlb009[3]:ngpus=1:ncpus=2+sccdlb009[4]:ngp
+	us=1:ncpus=2+sccdlb009[5]:ngpus=1:ncpus=2+sccdlb009[6]:ngpus=1:ncpus=2+
+	sccdlb009[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:15 2021
+    Output_Path = sccdlb001:/home/MLTL/yiran-wang/PycharmProjects/mt-preprocess
+	/big.o337768
+    Priority = 0
+    qtime = Wed Aug  4 15:24:56 2021
+    Rerunable = True
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Wed Aug  4 15:24:56 2021
+    session_id = 28377
+    jobdir = /home/MLTL/yiran-wang
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/yiran-wang,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=yiran-wang,
+	PBS_O_PATH=/opt/CUDA/cuda-10.2.89/bin:/opt/GCC/gcc-8.2.0/bin:/home/MLT
+	L/yiran-wang/miniconda3/bin:/home/MLTL/yiran-wang/miniconda3/condabin:/
+	usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:
+	/opt/pbs/bin:/home/MLTL/yiran-wang/.local/bin:/home/MLTL/yiran-wang/bin
+	:/home/MLTL/yiran-wang/bin:/opt/pbs/bin,
+	PBS_O_MAIL=/var/spool/mail/yiran-wang,PBS_O_SHELL=/usr/bin/zsh,
+	PBS_O_WORKDIR=/home/MLTL/yiran-wang/PycharmProjects/mt-preprocess,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Wed Aug 04 at 15:24 on (sccdlb009[0]:ngpus=1:ncpus=2+s
+	ccdlb009[1]:ngpus=1:ncpus=2+sccdlb009[2]:ngpus=1:ncpus=2+sccdlb009[3]:n
+	gpus=1:ncpus=2+sccdlb009[4]:ngpus=1:ncpus=2+sccdlb009[5]:ngpus=1:ncpus=
+	2+sccdlb009[6]:ngpus=1:ncpus=2+sccdlb009[7]:n...
+    etime = Wed Aug  4 15:24:56 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -l ngpus=8 -l ncpus=16 -N big train-transfor
+	mer-wmt-en-de-big-joint.sh
+    project = _pbs_project_default
+
+Job Id: 337813.sccpbs002
+    Job_Name = slt
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 42:47:48
+    resources_used.mem = 11081424kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 47956020kb
+    resources_used.walltime = 42:53:56
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Wed Aug  4 20:24:35 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.select/slt.e337813
+    exec_host = sccdlb033/7
+    exec_vnode = (sccdlb033[7]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:31 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.select/logs/french.attentive.1.log.qsub
+    Priority = 0
+    qtime = Wed Aug  4 20:24:35 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Wed Aug  4 20:24:35 2021
+    session_id = 21288
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.se
+	lect,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Wed Aug 04 at 20:24 on (sccdlb033[7]:ngpus=1:ncpus=1)
+    etime = Wed Aug  4 20:24:35 2021
+    run_count = 1
+    Submit_arguments = -N slt qsubs/french.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337816.sccpbs002
+    Job_Name = slt
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 42:41:15
+    resources_used.mem = 10966140kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 45776148kb
+    resources_used.walltime = 42:47:24
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Wed Aug  4 20:31:27 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.soft.select/slt.e337816
+    exec_host = sccdlb034/2
+    exec_vnode = (sccdlb034[2]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:49 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.soft.select/logs/zh_ctb.attentive.1.log.qsub
+    Priority = 0
+    qtime = Wed Aug  4 20:31:27 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Wed Aug  4 20:31:27 2021
+    session_id = 31030
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.so
+	ft.select,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Wed Aug 04 at 20:31 on (sccdlb034[2]:ngpus=1:ncpus=1)
+    etime = Wed Aug  4 20:31:27 2021
+    run_count = 1
+    Submit_arguments = -N slt qsubs/zh_ctb.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337817.sccpbs002
+    Job_Name = slt
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 42:40:37
+    resources_used.mem = 10897716kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 50360960kb
+    resources_used.walltime = 42:46:54
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Wed Aug  4 20:31:57 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.soft.select/slt.e337817
+    exec_host = sccdlb034/3
+    exec_vnode = (sccdlb034[3]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:49 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.soft.select/logs/ja_alt.attentive.1.log.qsub
+    Priority = 0
+    qtime = Wed Aug  4 20:31:57 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Wed Aug  4 20:31:57 2021
+    session_id = 31387
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.so
+	ft.select,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Wed Aug 04 at 20:31 on (sccdlb034[3]:ngpus=1:ncpus=1)
+    etime = Wed Aug  4 20:31:57 2021
+    run_count = 1
+    Submit_arguments = -N slt qsubs/ja_alt.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337820.sccpbs002
+    Job_Name = slt
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 42:39:13
+    resources_used.mem = 11074416kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 46375888kb
+    resources_used.walltime = 42:45:24
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Wed Aug  4 20:33:27 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.soft.select/slt.e337820
+    exec_host = sccdlb034/6
+    exec_vnode = (sccdlb034[6]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:49 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.soft.select/logs/french.attentive.1.log.qsub
+    Priority = 0
+    qtime = Wed Aug  4 20:33:27 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Wed Aug  4 20:33:27 2021
+    session_id = 32438
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.so
+	ft.select,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Wed Aug 04 at 20:33 on (sccdlb034[6]:ngpus=1:ncpus=1)
+    etime = Wed Aug  4 20:33:27 2021
+    run_count = 1
+    Submit_arguments = -N slt qsubs/french.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337821.sccpbs002
+    Job_Name = slt
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 98
+    resources_used.cput = 42:38:42
+    resources_used.mem = 10910696kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 49924368kb
+    resources_used.walltime = 42:44:54
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Wed Aug  4 20:33:57 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.soft.select/slt.e337821
+    exec_host = sccdlb034/7
+    exec_vnode = (sccdlb034[7]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:49 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.soft.select/logs/german.attentive.1.log.qsub
+    Priority = 0
+    qtime = Wed Aug  4 20:33:57 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Wed Aug  4 20:33:57 2021
+    session_id = 32811
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.so
+	ft.select,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Wed Aug 04 at 20:33 on (sccdlb034[7]:ngpus=1:ncpus=1)
+    etime = Wed Aug  4 20:33:57 2021
+    run_count = 1
+    Submit_arguments = -N slt qsubs/german.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337857.sccpbs002
+    Job_Name = pretrain_search_ch_epoch12_bs8192
+    Job_Owner = tsuchiya@sccdlb001
+    resources_used.cpupercent = 1374
+    resources_used.cput = 372:00:46
+    resources_used.mem = 430102536kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 6452223248kb
+    resources_used.walltime = 30:41:26
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 08:37:18 2021
+    Error_Path = sccdlb001:/home/MLTL-COOP/tsuchiya/work/roberta-japanese/pretr
+	ain_search_ch_epoch12_bs8192.e337857
+    exec_host = sccdlb016/0*0
+    exec_vnode = (sccdlb016[0]:ngpus=1:ncpus=2+sccdlb016[1]:ngpus=1:ncpus=2+scc
+	dlb016[2]:ngpus=1:ncpus=2+sccdlb016[3]:ngpus=1:ncpus=2+sccdlb016[4]:ngp
+	us=1:ncpus=2+sccdlb016[5]:ngpus=1:ncpus=2+sccdlb016[6]:ngpus=1:ncpus=2+
+	sccdlb016[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = doe
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:57 2021
+    Output_Path = sccdlb001:/home/MLTL-COOP/tsuchiya/work/roberta-japanese/pret
+	rain_search_ch_epoch12_bs8192.o337857
+    Priority = 0
+    qtime = Thu Aug  5 08:37:18 2021
+    Rerunable = True
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Thu Aug  5 08:37:18 2021
+    session_id = 35868
+    jobdir = /home/MLTL-COOP/tsuchiya
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-COOP/tsuchiya,PBS_O_LANG=ja_JP.UTF-8,
+	PBS_O_LOGNAME=tsuchiya,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/opt/OPENMPI/openmpi-4.0.0/bin:/opt/
+	CUDA/cuda-10.2.89/bin:/home/MLTL-COOP/tsuchiya/.local/bin:/usr/lib64/qt
+	-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin
+	:/share03/securityL2/PBStools,PBS_O_MAIL=/var/spool/mail/tsuchiya,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL-COOP/tsuchiya/work/roberta-japanese,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 08:37 on (sccdlb016[0]:ngpus=1:ncpus=2+s
+	ccdlb016[1]:ngpus=1:ncpus=2+sccdlb016[2]:ngpus=1:ncpus=2+sccdlb016[3]:n
+	gpus=1:ncpus=2+sccdlb016[4]:ngpus=1:ncpus=2+sccdlb016[5]:ngpus=1:ncpus=
+	2+sccdlb016[6]:ngpus=1:ncpus=2+sccdlb016[7]:n...
+    etime = Thu Aug  5 08:37:18 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -l select=1:ncpus=16:ngpus=8 -N pretrain_sea
+	rch_ch_epoch12_bs8192 -k doe -j oe
+    project = _pbs_project_default
+
+Job Id: 337858.sccpbs002
+    Job_Name = pretrain_search_ch_epoch16_bs8192
+    Job_Owner = tsuchiya@sccdlb001
+    resources_used.cpupercent = 1225
+    resources_used.cput = 373:24:56
+    resources_used.mem = 70212296kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 1242020240kb
+    resources_used.walltime = 30:40:57
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 08:37:18 2021
+    Error_Path = sccdlb001:/home/MLTL-COOP/tsuchiya/work/roberta-japanese/pretr
+	ain_search_ch_epoch16_bs8192.e337858
+    exec_host = sccdlb027/0*0
+    exec_vnode = (sccdlb027[0]:ngpus=1:ncpus=2+sccdlb027[1]:ngpus=1:ncpus=2+scc
+	dlb027[2]:ngpus=1:ncpus=2+sccdlb027[3]:ngpus=1:ncpus=2+sccdlb027[4]:ngp
+	us=1:ncpus=2+sccdlb027[5]:ngpus=1:ncpus=2+sccdlb027[6]:ngpus=1:ncpus=2+
+	sccdlb027[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = doe
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:15 2021
+    Output_Path = sccdlb001:/home/MLTL-COOP/tsuchiya/work/roberta-japanese/pret
+	rain_search_ch_epoch16_bs8192.o337858
+    Priority = 0
+    qtime = Thu Aug  5 08:37:18 2021
+    Rerunable = True
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Thu Aug  5 08:37:18 2021
+    session_id = 2448
+    jobdir = /home/MLTL-COOP/tsuchiya
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-COOP/tsuchiya,PBS_O_LANG=ja_JP.UTF-8,
+	PBS_O_LOGNAME=tsuchiya,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/opt/OPENMPI/openmpi-4.0.0/bin:/opt/
+	CUDA/cuda-10.2.89/bin:/home/MLTL-COOP/tsuchiya/.local/bin:/usr/lib64/qt
+	-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin
+	:/share03/securityL2/PBStools,PBS_O_MAIL=/var/spool/mail/tsuchiya,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL-COOP/tsuchiya/work/roberta-japanese,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 08:37 on (sccdlb027[0]:ngpus=1:ncpus=2+s
+	ccdlb027[1]:ngpus=1:ncpus=2+sccdlb027[2]:ngpus=1:ncpus=2+sccdlb027[3]:n
+	gpus=1:ncpus=2+sccdlb027[4]:ngpus=1:ncpus=2+sccdlb027[5]:ngpus=1:ncpus=
+	2+sccdlb027[6]:ngpus=1:ncpus=2+sccdlb027[7]:n...
+    etime = Thu Aug  5 08:37:18 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -l select=1:ncpus=16:ngpus=8 -N pretrain_sea
+	rch_ch_epoch16_bs8192 -k doe -j oe
+    project = _pbs_project_default
+
+Job Id: 337859.sccpbs002
+    Job_Name = pretrain_search_ch_epoch20_bs8192
+    Job_Owner = tsuchiya@sccdlb001
+    resources_used.cpupercent = 1224
+    resources_used.cput = 371:40:14
+    resources_used.mem = 430308128kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 6476191204kb
+    resources_used.walltime = 30:41:05
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 08:37:18 2021
+    Error_Path = sccdlb001:/home/MLTL-COOP/tsuchiya/work/roberta-japanese/pretr
+	ain_search_ch_epoch20_bs8192.e337859
+    exec_host = sccdlb029/0*0
+    exec_vnode = (sccdlb029[0]:ngpus=1:ncpus=2+sccdlb029[1]:ngpus=1:ncpus=2+scc
+	dlb029[2]:ngpus=1:ncpus=2+sccdlb029[3]:ngpus=1:ncpus=2+sccdlb029[4]:ngp
+	us=1:ncpus=2+sccdlb029[5]:ngpus=1:ncpus=2+sccdlb029[6]:ngpus=1:ncpus=2+
+	sccdlb029[7]:ngpus=1:ncpus=2)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = doe
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:35 2021
+    Output_Path = sccdlb001:/home/MLTL-COOP/tsuchiya/work/roberta-japanese/pret
+	rain_search_ch_epoch20_bs8192.o337859
+    Priority = 0
+    qtime = Thu Aug  5 08:37:18 2021
+    Rerunable = True
+    Resource_List.ncpus = 16
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=16:ngpus=8
+    stime = Thu Aug  5 08:37:18 2021
+    session_id = 14042
+    jobdir = /home/MLTL-COOP/tsuchiya
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-COOP/tsuchiya,PBS_O_LANG=ja_JP.UTF-8,
+	PBS_O_LOGNAME=tsuchiya,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/opt/OPENMPI/openmpi-4.0.0/bin:/opt/
+	CUDA/cuda-10.2.89/bin:/home/MLTL-COOP/tsuchiya/.local/bin:/usr/lib64/qt
+	-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin
+	:/share03/securityL2/PBStools,PBS_O_MAIL=/var/spool/mail/tsuchiya,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL-COOP/tsuchiya/work/roberta-japanese,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 08:37 on (sccdlb029[0]:ngpus=1:ncpus=2+s
+	ccdlb029[1]:ngpus=1:ncpus=2+sccdlb029[2]:ngpus=1:ncpus=2+sccdlb029[3]:n
+	gpus=1:ncpus=2+sccdlb029[4]:ngpus=1:ncpus=2+sccdlb029[5]:ngpus=1:ncpus=
+	2+sccdlb029[6]:ngpus=1:ncpus=2+sccdlb029[7]:n...
+    etime = Thu Aug  5 08:37:18 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -l select=1:ncpus=16:ngpus=8 -N pretrain_sea
+	rch_ch_epoch20_bs8192 -k doe -j oe
+    project = _pbs_project_default
+
+Job Id: 337891.sccpbs002
+    Job_Name = sfslt
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 23:19:51
+    resources_used.mem = 11007784kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 50503636kb
+    resources_used.walltime = 23:25:15
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 15:54:45 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.soft.select/sfslt.e337891
+    exec_host = sccdlb039/0
+    exec_vnode = (sccdlb039[0]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:59 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.soft.select/logs/my.long.attentive.1.log.qsub
+    Priority = 0
+    qtime = Thu Aug  5 15:54:45 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Thu Aug  5 15:54:45 2021
+    session_id = 6827
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.so
+	ft.select,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 15:54 on (sccdlb039[0]:ngpus=1:ncpus=1)
+    etime = Thu Aug  5 15:54:45 2021
+    run_count = 1
+    Submit_arguments = -N sfslt qsubs/my.long.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337909.sccpbs002
+    Job_Name = cat
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 19:52:04
+    resources_used.mem = 10704592kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 48103620kb
+    resources_used.walltime = 19:54:53
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 19:25:00 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.concat/others/normlabel/cat.e337909
+    exec_host = sccdlb036/7
+    exec_vnode = (sccdlb036[7]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:51 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.concat/others/normlabel/logs/en_ptb.lw.attentive.1.log.qsub
+    Priority = 0
+    qtime = Thu Aug  5 19:25:00 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Thu Aug  5 19:25:00 2021
+    session_id = 17164
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/envs/cparse/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib
+	64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pb
+	s/bin:/home/MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.co
+	ncat/others/normlabel,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 19:25 on (sccdlb036[7]:ngpus=1:ncpus=1)
+    etime = Thu Aug  5 19:25:00 2021
+    run_count = 1
+    Submit_arguments = -N cat qsubs/en_ptb.lw.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337910.sccpbs002
+    Job_Name = cat
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 19:51:38
+    resources_used.mem = 11023444kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 48619836kb
+    resources_used.walltime = 19:54:32
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 19:25:30 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.concat/others/normlabel/cat.e337910
+    exec_host = sccdlb038/2
+    exec_vnode = (sccdlb038[2]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:00 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.concat/others/normlabel/logs/french.attentive.1.log.qsub
+    Priority = 0
+    qtime = Thu Aug  5 19:25:30 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Thu Aug  5 19:25:30 2021
+    session_id = 13075
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/envs/cparse/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib
+	64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pb
+	s/bin:/home/MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.co
+	ncat/others/normlabel,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 19:25 on (sccdlb038[2]:ngpus=1:ncpus=1)
+    etime = Thu Aug  5 19:25:30 2021
+    run_count = 1
+    Submit_arguments = -N cat qsubs/french.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337921.sccpbs002
+    Job_Name = bsln
+    Job_Owner = rwang@sccdlb001
+    resources_used.cpupercent = 848
+    resources_used.cput = 133:09:35
+    resources_used.mem = 34059680kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 1089602860kb
+    resources_used.walltime = 15:44:32
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Thu Aug  5 23:34:59 2021
+    Error_Path = sccdlb001:/share03/rwang/mpc/fairseq/bsln.e337921
+    exec_host = sccdlb023/0*0
+    exec_vnode = (sccdlb023[0]:ngpus=1:ncpus=1+sccdlb023[1]:ngpus=1+sccdlb023[2
+	]:ngpus=1+sccdlb023[3]:ngpus=1+sccdlb023[4]:ngpus=1+sccdlb023[5]:ngpus=
+	1+sccdlb023[6]:ngpus=1+sccdlb023[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:29 2021
+    Output_Path = sccdlb001:/share03/rwang/mpc/fairseq/bsln.o337921
+    Priority = 0
+    qtime = Thu Aug  5 23:34:59 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Thu Aug  5 23:34:59 2021
+    session_id = 30962
+    jobdir = /home/MLTL-COOP/rwang
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-COOP/rwang,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=rwang,
+	PBS_O_PATH=/usr/local/cuda/bin:/share03/rwang/anaconda3/envs/mpc/bin:/
+	share03/rwang/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/
+	usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL-COOP/rwang/.l
+	ocal/bin:/home/MLTL-COOP/rwang/bin,PBS_O_MAIL=/var/spool/mail/rwang,
+	PBS_O_SHELL=/bin/bash,PBS_O_WORKDIR=/share03/rwang/mpc/fairseq,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Thu Aug 05 at 23:34 on (sccdlb023[0]:ngpus=1:ncpus=1+s
+	ccdlb023[1]:ngpus=1+sccdlb023[2]:ngpus=1+sccdlb023[3]:ngpus=1+sccdlb023
+	[4]:ngpus=1+sccdlb023[5]:ngpus=1+sccdlb023[6]:ngpus=1+sccdlb023[7]:ngpu
+	s=1)
+    etime = Thu Aug  5 23:34:59 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N bsln -l ngpus=8 /share03/rwang/mpc/script
+	s/runwmt14.sh -j oe
+    project = _pbs_project_default
+
+Job Id: 337924.sccpbs002
+    Job_Name = cat
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 99
+    resources_used.cput = 15:09:52
+    resources_used.mem = 10708776kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 51679548kb
+    resources_used.walltime = 15:12:01
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 00:06:30 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.concat/others/septlabel/cat.e337924
+    exec_host = sccdlb033/3
+    exec_vnode = (sccdlb033[3]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:31 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.concat/others/septlabel/logs/en_ptb.lw.attentive.1.log.qsub
+    Priority = 0
+    qtime = Fri Aug  6 00:06:30 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Fri Aug  6 00:06:30 2021
+    session_id = 6115
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.co
+	ncat/others/septlabel,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 00:06 on (sccdlb033[3]:ngpus=1:ncpus=1)
+    etime = Fri Aug  6 00:06:30 2021
+    run_count = 1
+    Submit_arguments = -N cat qsubs/en_ptb.lw.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337925.sccpbs002
+    Job_Name = cat
+    Job_Owner = mhkaing@sccdlb001
+    resources_used.cpupercent = 98
+    resources_used.cput = 15:09:19
+    resources_used.mem = 11086960kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 55857468kb
+    resources_used.walltime = 15:11:31
+    job_state = R
+    queue = one-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 00:07:00 2021
+    Error_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-larg
+	e.concat/others/septlabel/cat.e337925
+    exec_host = sccdlb033/4
+    exec_vnode = (sccdlb033[4]:ngpus=1:ncpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:31 2021
+    Output_Path = sccdlb001:/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-lar
+	ge.concat/others/septlabel/logs/french.attentive.1.log.qsub
+    Priority = 0
+    qtime = Fri Aug  6 00:07:00 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 1
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ngpus=1:ncpus=1
+    stime = Fri Aug  6 00:07:00 2021
+    session_id = 6477
+    jobdir = /home/MLTL/mhkaing
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/mhkaing,PBS_O_LANG=en_US,
+	PBS_O_LOGNAME=mhkaing,
+	PBS_O_PATH=/home/MLTL/mhkaing/perl5/bin:/share03/mhkaing/tools/minicon
+	da3/bin:/share03/mhkaing/tools/miniconda3/condabin:/usr/lib64/qt-3.3/bi
+	n:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/
+	MLTL/mhkaing/.local/bin:/home/MLTL/mhkaing/bin,
+	PBS_O_MAIL=/var/spool/mail/mhkaing,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/mhkaing/unsup.parse/transfer/lex/xlm-r-large.co
+	ncat/others/septlabel,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=one-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 00:07 on (sccdlb033[4]:ngpus=1:ncpus=1)
+    etime = Fri Aug  6 00:07:00 2021
+    run_count = 1
+    Submit_arguments = -N cat qsubs/french.attentive.1.qsub
+    project = _pbs_project_default
+
+Job Id: 337927.sccpbs002
+    Job_Name = aug1
+    Job_Owner = zhangzs@sccdlb001
+    resources_used.cpupercent = 223
+    resources_used.cput = 30:26:38
+    resources_used.mem = 24482568kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 147264444kb
+    resources_used.walltime = 13:56:20
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 01:23:53 2021
+    Error_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/
+	mrc_pytorch/aug1.e337927
+    exec_host = sccdlb006/0*0
+    exec_vnode = (sccdlb006[0]:ngpus=1:ncpus=1+sccdlb006[1]:ngpus=1+sccdlb006[2
+	]:ngpus=1+sccdlb006[3]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:13 2021
+    Output_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch
+	/mrc_pytorch/run_mrc_cmrc2018_aug1.log
+    Priority = 0
+    qtime = Fri Aug  6 01:23:53 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 4
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=4
+    stime = Fri Aug  6 01:23:53 2021
+    session_id = 35159
+    jobdir = /home/MLTL-INTERN/zhangzs
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/zhangzs,
+	PBS_O_LANG=zh_CN.UTF-8,PBS_O_LOGNAME=zhangzs,
+	PBS_O_PATH=/usr/local/lib:/share03/zhangzs/cuda-10.0.130/bin:/usr/loca
+	l/lib:/share03/zhangzs/cuda-10.0.130/bin:/home/MLTL-INTERN/zhangzs/mini
+	conda3/envs/cmrc/bin:/home/MLTL-INTERN/zhangzs/miniconda3/condabin:/usr
+	/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/op
+	t/pbs/bin:/home/MLTL-INTERN/zhangzs/.local/bin:/home/MLTL-INTERN/zhangz
+	s/bin:/opt/pbs/bin,PBS_O_MAIL=/var/spool/mail/zhangzs,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_
+	pytorch,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 01:23 on (sccdlb006[0]:ngpus=1:ncpus=1+s
+	ccdlb006[1]:ngpus=1+sccdlb006[2]:ngpus=1+sccdlb006[3]:ngpus=1)
+    etime = Fri Aug  6 01:23:53 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N aug1 -l ngpus=4 /share03/zhangzs/CLUE/CLU
+	E/baselines/models_pytorch/mrc_pytorch/run_mrc_cmrc2018_aug1.sh -j oe -
+	o /share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_pytorch/run_m
+	rc_cmrc2018_aug1.log
+    project = _pbs_project_default
+
+Job Id: 338080.sccpbs002
+    Job_Name = snmt
+    Job_Owner = draj@sccdlb001
+    resources_used.cpupercent = 935
+    resources_used.cput = 59:19:07
+    resources_used.mem = 46119216kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 561539264kb
+    resources_used.walltime = 06:21:48
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 08:56:26 2021
+    Error_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/sn
+	mt.e338080
+    exec_host = sccdlb007/0*0
+    exec_vnode = (sccdlb007[0]:ngpus=1:ncpus=1+sccdlb007[1]:ngpus=1+sccdlb007[2
+	]:ngpus=1+sccdlb007[3]:ngpus=1+sccdlb007[4]:ngpus=1+sccdlb007[5]:ngpus=
+	1+sccdlb007[6]:ngpus=1+sccdlb007[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:13 2021
+    Output_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/s
+	nmt.o338080
+    Priority = 0
+    qtime = Fri Aug  6 08:56:26 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 08:56:27 2021
+    session_id = 5155
+    jobdir = /home/MLTL/draj
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/draj,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=draj,
+	PBS_O_PATH=/share03/draj/environments/py36hf/bin:/share03/draj/environ
+	ments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/share03/draj/env
+	ironments/py36hf/bin:/share03/draj/environments/cuda/cuda-10.0/bin:/sha
+	re03/securityL2/PBStools:/share03/draj/environments/py36hf/bin:/home/ML
+	TL/draj/anaconda3/bin:/home/MLTL/draj/anaconda3/condabin:/share03/draj/
+	environments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/usr/lib64
+	/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+	bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin:/opt/pbs/bin:/opt/pb
+	s/bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin,
+	PBS_O_MAIL=/var/spool/mail/draj,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/draj/data/monolingual_corpora/indic/logs,
+	PBS_O_SYSTEM=Linux,languages=,nr=0,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 08:56 on (sccdlb007[0]:ngpus=1:ncpus=1+s
+	ccdlb007[1]:ngpus=1+sccdlb007[2]:ngpus=1+sccdlb007[3]:ngpus=1+sccdlb007
+	[4]:ngpus=1+sccdlb007[5]:ngpus=1+sccdlb007[6]:ngpus=1+sccdlb007[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 08:56:26 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N snmt -l ngpus=8 -v languages=,nr=0,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001 /share03/draj/data/monolingual_c
+	orpora/indic/run_ddp.sh
+    project = _pbs_project_default
+
+Job Id: 338081.sccpbs002
+    Job_Name = snmt
+    Job_Owner = draj@sccdlb001
+    resources_used.cpupercent = 933
+    resources_used.cput = 59:28:03
+    resources_used.mem = 47159824kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 572251108kb
+    resources_used.walltime = 06:22:44
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 08:56:31 2021
+    Error_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/sn
+	mt.e338081
+    exec_host = sccdlb017/0*0
+    exec_vnode = (sccdlb017[0]:ngpus=1:ncpus=1+sccdlb017[1]:ngpus=1+sccdlb017[2
+	]:ngpus=1+sccdlb017[3]:ngpus=1+sccdlb017[4]:ngpus=1+sccdlb017[5]:ngpus=
+	1+sccdlb017[6]:ngpus=1+sccdlb017[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:13 2021
+    Output_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/s
+	nmt.o338081
+    Priority = 0
+    qtime = Fri Aug  6 08:56:31 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 08:56:31 2021
+    session_id = 8800
+    jobdir = /home/MLTL/draj
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/draj,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=draj,
+	PBS_O_PATH=/share03/draj/environments/py36hf/bin:/share03/draj/environ
+	ments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/share03/draj/env
+	ironments/py36hf/bin:/share03/draj/environments/cuda/cuda-10.0/bin:/sha
+	re03/securityL2/PBStools:/share03/draj/environments/py36hf/bin:/home/ML
+	TL/draj/anaconda3/bin:/home/MLTL/draj/anaconda3/condabin:/share03/draj/
+	environments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/usr/lib64
+	/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+	bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin:/opt/pbs/bin:/opt/pb
+	s/bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin,
+	PBS_O_MAIL=/var/spool/mail/draj,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/draj/data/monolingual_corpora/indic/logs,
+	PBS_O_SYSTEM=Linux,languages=,nr=1,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 08:56 on (sccdlb017[0]:ngpus=1:ncpus=1+s
+	ccdlb017[1]:ngpus=1+sccdlb017[2]:ngpus=1+sccdlb017[3]:ngpus=1+sccdlb017
+	[4]:ngpus=1+sccdlb017[5]:ngpus=1+sccdlb017[6]:ngpus=1+sccdlb017[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 08:56:31 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N snmt -l ngpus=8 -v languages=,nr=1,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001 /share03/draj/data/monolingual_c
+	orpora/indic/run_ddp.sh
+    project = _pbs_project_default
+
+Job Id: 338082.sccpbs002
+    Job_Name = snmt
+    Job_Owner = draj@sccdlb001
+    resources_used.cpupercent = 933
+    resources_used.cput = 59:33:54
+    resources_used.mem = 45780672kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 566254056kb
+    resources_used.walltime = 06:23:36
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 08:56:31 2021
+    Error_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/sn
+	mt.e338082
+    exec_host = sccdlb019/0*0
+    exec_vnode = (sccdlb019[0]:ngpus=1:ncpus=1+sccdlb019[1]:ngpus=1+sccdlb019[2
+	]:ngpus=1+sccdlb019[3]:ngpus=1+sccdlb019[4]:ngpus=1+sccdlb019[5]:ngpus=
+	1+sccdlb019[6]:ngpus=1+sccdlb019[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:07 2021
+    Output_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/s
+	nmt.o338082
+    Priority = 0
+    qtime = Fri Aug  6 08:56:31 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 08:56:31 2021
+    session_id = 22805
+    jobdir = /home/MLTL/draj
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/draj,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=draj,
+	PBS_O_PATH=/share03/draj/environments/py36hf/bin:/share03/draj/environ
+	ments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/share03/draj/env
+	ironments/py36hf/bin:/share03/draj/environments/cuda/cuda-10.0/bin:/sha
+	re03/securityL2/PBStools:/share03/draj/environments/py36hf/bin:/home/ML
+	TL/draj/anaconda3/bin:/home/MLTL/draj/anaconda3/condabin:/share03/draj/
+	environments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/usr/lib64
+	/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+	bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin:/opt/pbs/bin:/opt/pb
+	s/bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin,
+	PBS_O_MAIL=/var/spool/mail/draj,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/draj/data/monolingual_corpora/indic/logs,
+	PBS_O_SYSTEM=Linux,languages=,nr=2,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 08:56 on (sccdlb019[0]:ngpus=1:ncpus=1+s
+	ccdlb019[1]:ngpus=1+sccdlb019[2]:ngpus=1+sccdlb019[3]:ngpus=1+sccdlb019
+	[4]:ngpus=1+sccdlb019[5]:ngpus=1+sccdlb019[6]:ngpus=1+sccdlb019[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 08:56:31 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N snmt -l ngpus=8 -v languages=,nr=2,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001 /share03/draj/data/monolingual_c
+	orpora/indic/run_ddp.sh
+    project = _pbs_project_default
+
+Job Id: 338083.sccpbs002
+    Job_Name = snmt
+    Job_Owner = draj@sccdlb001
+    resources_used.cpupercent = 934
+    resources_used.cput = 59:29:18
+    resources_used.mem = 45785044kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 559778976kb
+    resources_used.walltime = 06:22:52
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 08:56:31 2021
+    Error_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/sn
+	mt.e338083
+    exec_host = sccdlb024/0*0
+    exec_vnode = (sccdlb024[0]:ngpus=1:ncpus=1+sccdlb024[1]:ngpus=1+sccdlb024[2
+	]:ngpus=1+sccdlb024[3]:ngpus=1+sccdlb024[4]:ngpus=1+sccdlb024[5]:ngpus=
+	1+sccdlb024[6]:ngpus=1+sccdlb024[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:23 2021
+    Output_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/s
+	nmt.o338083
+    Priority = 0
+    qtime = Fri Aug  6 08:56:31 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 08:56:31 2021
+    session_id = 20521
+    jobdir = /home/MLTL/draj
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/draj,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=draj,
+	PBS_O_PATH=/share03/draj/environments/py36hf/bin:/share03/draj/environ
+	ments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/share03/draj/env
+	ironments/py36hf/bin:/share03/draj/environments/cuda/cuda-10.0/bin:/sha
+	re03/securityL2/PBStools:/share03/draj/environments/py36hf/bin:/home/ML
+	TL/draj/anaconda3/bin:/home/MLTL/draj/anaconda3/condabin:/share03/draj/
+	environments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/usr/lib64
+	/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+	bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin:/opt/pbs/bin:/opt/pb
+	s/bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin,
+	PBS_O_MAIL=/var/spool/mail/draj,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/draj/data/monolingual_corpora/indic/logs,
+	PBS_O_SYSTEM=Linux,languages=,nr=3,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 08:56 on (sccdlb024[0]:ngpus=1:ncpus=1+s
+	ccdlb024[1]:ngpus=1+sccdlb024[2]:ngpus=1+sccdlb024[3]:ngpus=1+sccdlb024
+	[4]:ngpus=1+sccdlb024[5]:ngpus=1+sccdlb024[6]:ngpus=1+sccdlb024[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 08:56:31 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N snmt -l ngpus=8 -v languages=,nr=3,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001 /share03/draj/data/monolingual_c
+	orpora/indic/run_ddp.sh
+    project = _pbs_project_default
+
+Job Id: 338084.sccpbs002
+    Job_Name = snmt
+    Job_Owner = draj@sccdlb001
+    resources_used.cpupercent = 933
+    resources_used.cput = 59:22:17
+    resources_used.mem = 47267168kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 551256588kb
+    resources_used.walltime = 06:22:44
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 08:56:31 2021
+    Error_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/sn
+	mt.e338084
+    exec_host = sccdlb025/0*0
+    exec_vnode = (sccdlb025[0]:ngpus=1:ncpus=1+sccdlb025[1]:ngpus=1+sccdlb025[2
+	]:ngpus=1+sccdlb025[3]:ngpus=1+sccdlb025[4]:ngpus=1+sccdlb025[5]:ngpus=
+	1+sccdlb025[6]:ngpus=1+sccdlb025[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:15 2021
+    Output_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/s
+	nmt.o338084
+    Priority = 0
+    qtime = Fri Aug  6 08:56:31 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 08:56:31 2021
+    session_id = 28153
+    jobdir = /home/MLTL/draj
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/draj,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=draj,
+	PBS_O_PATH=/share03/draj/environments/py36hf/bin:/share03/draj/environ
+	ments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/share03/draj/env
+	ironments/py36hf/bin:/share03/draj/environments/cuda/cuda-10.0/bin:/sha
+	re03/securityL2/PBStools:/share03/draj/environments/py36hf/bin:/home/ML
+	TL/draj/anaconda3/bin:/home/MLTL/draj/anaconda3/condabin:/share03/draj/
+	environments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/usr/lib64
+	/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+	bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin:/opt/pbs/bin:/opt/pb
+	s/bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin,
+	PBS_O_MAIL=/var/spool/mail/draj,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/draj/data/monolingual_corpora/indic/logs,
+	PBS_O_SYSTEM=Linux,languages=,nr=4,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 08:56 on (sccdlb025[0]:ngpus=1:ncpus=1+s
+	ccdlb025[1]:ngpus=1+sccdlb025[2]:ngpus=1+sccdlb025[3]:ngpus=1+sccdlb025
+	[4]:ngpus=1+sccdlb025[5]:ngpus=1+sccdlb025[6]:ngpus=1+sccdlb025[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 08:56:31 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N snmt -l ngpus=8 -v languages=,nr=4,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001 /share03/draj/data/monolingual_c
+	orpora/indic/run_ddp.sh
+    project = _pbs_project_default
+
+Job Id: 338085.sccpbs002
+    Job_Name = snmt
+    Job_Owner = draj@sccdlb001
+    resources_used.cpupercent = 933
+    resources_used.cput = 59:35:34
+    resources_used.mem = 45777952kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 574224464kb
+    resources_used.walltime = 06:23:36
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 08:56:31 2021
+    Error_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/sn
+	mt.e338085
+    exec_host = sccdlb026/0*0
+    exec_vnode = (sccdlb026[0]:ngpus=1:ncpus=1+sccdlb026[1]:ngpus=1+sccdlb026[2
+	]:ngpus=1+sccdlb026[3]:ngpus=1+sccdlb026[4]:ngpus=1+sccdlb026[5]:ngpus=
+	1+sccdlb026[6]:ngpus=1+sccdlb026[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:06 2021
+    Output_Path = sccdlb001:/share03/draj/data/monolingual_corpora/indic/logs/s
+	nmt.o338085
+    Priority = 0
+    qtime = Fri Aug  6 08:56:31 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 08:56:31 2021
+    session_id = 30002
+    jobdir = /home/MLTL/draj
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/draj,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=draj,
+	PBS_O_PATH=/share03/draj/environments/py36hf/bin:/share03/draj/environ
+	ments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/share03/draj/env
+	ironments/py36hf/bin:/share03/draj/environments/cuda/cuda-10.0/bin:/sha
+	re03/securityL2/PBStools:/share03/draj/environments/py36hf/bin:/home/ML
+	TL/draj/anaconda3/bin:/home/MLTL/draj/anaconda3/condabin:/share03/draj/
+	environments/cuda/cuda-10.0/bin:/share03/securityL2/PBStools:/usr/lib64
+	/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+	bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin:/opt/pbs/bin:/opt/pb
+	s/bin:/home/MLTL/draj/.local/bin:/home/MLTL/draj/bin,
+	PBS_O_MAIL=/var/spool/mail/draj,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/draj/data/monolingual_corpora/indic/logs,
+	PBS_O_SYSTEM=Linux,languages=,nr=5,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 08:56 on (sccdlb026[0]:ngpus=1:ncpus=1+s
+	ccdlb026[1]:ngpus=1+sccdlb026[2]:ngpus=1+sccdlb026[3]:ngpus=1+sccdlb026
+	[4]:ngpus=1+sccdlb026[5]:ngpus=1+sccdlb026[6]:ngpus=1+sccdlb026[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 08:56:31 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N snmt -l ngpus=8 -v languages=,nr=5,n=6,
+	model_path=/share03/draj/data/monolingual_corpora/indic/fixed_vocab_mo
+	del_rsnmt/ddpmodel.all.transformer_big.6-layer.64k.ls-0.1.drop-0.1.warm
+	up-16k.gradclip-1.0.lr-1em3.wd-0.00001 /share03/draj/data/monolingual_c
+	orpora/indic/run_ddp.sh
+    project = _pbs_project_default
+
+Job Id: 338086.sccpbs002
+    Job_Name = aug2
+    Job_Owner = zhangzs@sccdlb001
+    resources_used.cpupercent = 222
+    resources_used.cput = 08:16:44
+    resources_used.mem = 25795956kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 148502884kb
+    resources_used.walltime = 03:45:12
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 11:35:01 2021
+    Error_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/
+	mrc_pytorch/aug2.e338086
+    exec_host = sccdlb006/1*0
+    exec_vnode = (sccdlb006[0]:ncpus=1+sccdlb006[4]:ngpus=1+sccdlb006[5]:ngpus=
+	1+sccdlb006[6]:ngpus=1+sccdlb006[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:13 2021
+    Output_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch
+	/mrc_pytorch/run_mrc_cmrc2018_aug2.log
+    Priority = 0
+    qtime = Fri Aug  6 11:35:01 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 4
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=4
+    stime = Fri Aug  6 11:35:01 2021
+    session_id = 25662
+    jobdir = /home/MLTL-INTERN/zhangzs
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/zhangzs,
+	PBS_O_LANG=zh_CN.UTF-8,PBS_O_LOGNAME=zhangzs,
+	PBS_O_PATH=/usr/local/lib:/share03/zhangzs/cuda-10.0.130/bin:/usr/loca
+	l/lib:/share03/zhangzs/cuda-10.0.130/bin:/home/MLTL-INTERN/zhangzs/mini
+	conda3/envs/cmrc/bin:/home/MLTL-INTERN/zhangzs/miniconda3/condabin:/usr
+	/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/op
+	t/pbs/bin:/home/MLTL-INTERN/zhangzs/.local/bin:/home/MLTL-INTERN/zhangz
+	s/bin:/opt/pbs/bin,PBS_O_MAIL=/var/spool/mail/zhangzs,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_
+	pytorch,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 11:35 on (sccdlb006[0]:ncpus=1+sccdlb006
+	[4]:ngpus=1+sccdlb006[5]:ngpus=1+sccdlb006[6]:ngpus=1+sccdlb006[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 11:35:01 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N aug2 -l ngpus=4 /share03/zhangzs/CLUE/CLU
+	E/baselines/models_pytorch/mrc_pytorch/run_mrc_cmrc2018_aug2.sh -j oe -
+	o /share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_pytorch/run_m
+	rc_cmrc2018_aug2.log
+    project = _pbs_project_default
+
+Job Id: 338094.sccpbs002
+    Job_Name = proc-pa
+    Job_Owner = zhangzs@sccdlb001
+    resources_used.cpupercent = 596
+    resources_used.cput = 18:43:39
+    resources_used.mem = 16290892kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 636098232kb
+    resources_used.walltime = 03:12:28
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 12:07:32 2021
+    Error_Path = sccdlb001:/home/MLTL-INTERN/zhangzs/zhangzs/reasoning/proc-pa.
+	e338094
+    exec_host = sccdlb020/0*0
+    exec_vnode = (sccdlb020[0]:ngpus=1:ncpus=1+sccdlb020[1]:ngpus=1+sccdlb020[2
+	]:ngpus=1+sccdlb020[3]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:00 2021
+    Output_Path = sccdlb001:/share03/zhangzs/reasoning/log/proc-pa.log
+    Priority = 0
+    qtime = Fri Aug  6 12:07:32 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 4
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=4
+    stime = Fri Aug  6 12:07:32 2021
+    session_id = 23262
+    jobdir = /home/MLTL-INTERN/zhangzs
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/zhangzs,
+	PBS_O_LANG=en_US.UTF-8,PBS_O_LOGNAME=zhangzs,
+	PBS_O_PATH=/usr/local/lib:/share03/zhangzs/cuda-10.0.130/bin:/home/MLT
+	L-INTERN/zhangzs/miniconda3/bin:/home/MLTL-INTERN/zhangzs/miniconda3/co
+	ndabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/opt/pbs/bin:/home/MLTL-INTERN/zhangzs/.local/bin:/home/MLTL-IN
+	TERN/zhangzs/bin,PBS_O_MAIL=/var/spool/mail/zhangzs,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL-INTERN/zhangzs/zhangzs/reasoning,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 12:07 on (sccdlb020[0]:ngpus=1:ncpus=1+s
+	ccdlb020[1]:ngpus=1+sccdlb020[2]:ngpus=1+sccdlb020[3]:ngpus=1)
+    etime = Fri Aug  6 12:07:32 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N proc-pa -l ngpus=4 /share03/zhangzs/reaso
+	ning/bash_pregenerate_data.sh -j oe -o /share03/zhangzs/reasoning/log/p
+	roc-pa.log
+    project = _pbs_project_default
+
+Job Id: 338095.sccpbs002
+    Job_Name = mbart.20best
+    Job_Owner = bmarie@sccdlb001
+    resources_used.cpupercent = 98
+    resources_used.cput = 03:06:27
+    resources_used.mem = 3232860kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 59808552kb
+    resources_used.walltime = 03:06:53
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 12:11:42 2021
+    Error_Path = sccdlb001:/home/MLTL/bmarie/mbart.20best.e338095
+    exec_host = sccdlb028/0*0
+    exec_vnode = (sccdlb028[0]:ngpus=1:ncpus=1+sccdlb028[1]:ngpus=1+sccdlb028[2
+	]:ngpus=1+sccdlb028[3]:ngpus=1+sccdlb028[4]:ngpus=1+sccdlb028[5]:ngpus=
+	1+sccdlb028[6]:ngpus=1+sccdlb028[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:35 2021
+    Output_Path = sccdlb001:/home/MLTL/bmarie/mbart.20best.o338095
+    Priority = 0
+    qtime = Fri Aug  6 12:11:42 2021
+    Rerunable = False
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 12:11:42 2021
+    session_id = 11252
+    jobdir = /home/MLTL/bmarie
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/bmarie,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=bmarie,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/bmarie/tools/anaconda3/envs
+	/pytorch/bin:/share03/bmarie/tools/anaconda3/condabin:/usr/lib64/qt-3.3
+	/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/sh
+	are03/securityL2/PBStools:/home/MLTL/bmarie/.local/bin:/home/MLTL/bmari
+	e/bin,PBS_O_MAIL=/var/spool/mail/bmarie,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL/bmarie,PBS_O_SYSTEM=Linux,
+	PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 12:11 on (sccdlb028[0]:ngpus=1:ncpus=1+s
+	ccdlb028[1]:ngpus=1+sccdlb028[2]:ngpus=1+sccdlb028[3]:ngpus=1+sccdlb028
+	[4]:ngpus=1+sccdlb028[5]:ngpus=1+sccdlb028[6]:ngpus=1+sccdlb028[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 12:11:42 2021
+    run_count = 1
+    Submit_arguments = -r n -N mbart.20best -q full-gpu -lngpus=8 tmp.psub.bmar
+	ie.1628219502.16545
+    project = _pbs_project_default
+
+Job Id: 338096.sccpbs002
+    Job_Name = mbart.20best
+    Job_Owner = bmarie@sccdlb001
+    resources_used.cpupercent = 98
+    resources_used.cput = 03:04:16
+    resources_used.mem = 3260044kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 59303224kb
+    resources_used.walltime = 03:05:14
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 12:13:13 2021
+    Error_Path = sccdlb001:/home/MLTL/bmarie/mbart.20best.e338096
+    exec_host = sccdlb030/0*0
+    exec_vnode = (sccdlb030[0]:ngpus=1:ncpus=1+sccdlb030[1]:ngpus=1+sccdlb030[2
+	]:ngpus=1+sccdlb030[3]:ngpus=1+sccdlb030[4]:ngpus=1+sccdlb030[5]:ngpus=
+	1+sccdlb030[6]:ngpus=1+sccdlb030[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:27 2021
+    Output_Path = sccdlb001:/home/MLTL/bmarie/mbart.20best.o338096
+    Priority = 0
+    qtime = Fri Aug  6 12:13:13 2021
+    Rerunable = False
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 12:13:13 2021
+    session_id = 10043
+    jobdir = /home/MLTL/bmarie
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/bmarie,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=bmarie,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/bmarie/tools/anaconda3/envs
+	/pytorch/bin:/share03/bmarie/tools/anaconda3/condabin:/usr/lib64/qt-3.3
+	/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/sh
+	are03/securityL2/PBStools:/home/MLTL/bmarie/.local/bin:/home/MLTL/bmari
+	e/bin,PBS_O_MAIL=/var/spool/mail/bmarie,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL/bmarie,PBS_O_SYSTEM=Linux,
+	PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 12:13 on (sccdlb030[0]:ngpus=1:ncpus=1+s
+	ccdlb030[1]:ngpus=1+sccdlb030[2]:ngpus=1+sccdlb030[3]:ngpus=1+sccdlb030
+	[4]:ngpus=1+sccdlb030[5]:ngpus=1+sccdlb030[6]:ngpus=1+sccdlb030[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 12:13:13 2021
+    run_count = 1
+    Submit_arguments = -r n -N mbart.20best -q full-gpu -lngpus=8 tmp.psub.bmar
+	ie.1628219593.17378
+    project = _pbs_project_default
+
+Job Id: 338097.sccpbs002
+    Job_Name = aug3
+    Job_Owner = zhangzs@sccdlb001
+    resources_used.cpupercent = 248
+    resources_used.cput = 05:17:02
+    resources_used.mem = 24146580kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 187238504kb
+    resources_used.walltime = 02:22:34
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 12:57:01 2021
+    Error_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/
+	mrc_pytorch/aug3.e338097
+    exec_host = sccdlb003/0*0
+    exec_vnode = (sccdlb003[0]:ngpus=1:ncpus=1+sccdlb003[1]:ngpus=1+sccdlb003[2
+	]:ngpus=1+sccdlb003[3]:ngpus=1+sccdlb003[4]:ngpus=1+sccdlb003[5]:ngpus=
+	1+sccdlb003[6]:ngpus=1+sccdlb003[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:35 2021
+    Output_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch
+	/mrc_pytorch/run_mrc_cmrc2018_aug3.log
+    Priority = 0
+    qtime = Fri Aug  6 12:57:01 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 12:57:01 2021
+    session_id = 2124
+    jobdir = /home/MLTL-INTERN/zhangzs
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/zhangzs,
+	PBS_O_LANG=zh_CN.UTF-8,PBS_O_LOGNAME=zhangzs,
+	PBS_O_PATH=/usr/local/lib:/share03/zhangzs/cuda-10.0.130/bin:/usr/loca
+	l/lib:/share03/zhangzs/cuda-10.0.130/bin:/home/MLTL-INTERN/zhangzs/mini
+	conda3/envs/cmrc/bin:/home/MLTL-INTERN/zhangzs/miniconda3/condabin:/usr
+	/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/op
+	t/pbs/bin:/home/MLTL-INTERN/zhangzs/.local/bin:/home/MLTL-INTERN/zhangz
+	s/bin:/opt/pbs/bin,PBS_O_MAIL=/var/spool/mail/zhangzs,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_
+	pytorch,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 12:57 on (sccdlb003[0]:ngpus=1:ncpus=1+s
+	ccdlb003[1]:ngpus=1+sccdlb003[2]:ngpus=1+sccdlb003[3]:ngpus=1+sccdlb003
+	[4]:ngpus=1+sccdlb003[5]:ngpus=1+sccdlb003[6]:ngpus=1+sccdlb003[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 12:57:01 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N aug3 -l ngpus=8 /share03/zhangzs/CLUE/CLU
+	E/baselines/models_pytorch/mrc_pytorch/run_mrc_cmrc2018_aug3.sh -j oe -
+	o /share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_pytorch/run_m
+	rc_cmrc2018_aug3.log
+    project = _pbs_project_default
+
+Job Id: 338099.sccpbs002
+    Job_Name = aug4
+    Job_Owner = zhangzs@sccdlb001
+    resources_used.cpupercent = 249
+    resources_used.cput = 03:41:00
+    resources_used.mem = 35096192kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 198154344kb
+    resources_used.walltime = 01:46:47
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 13:31:28 2021
+    Error_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/
+	mrc_pytorch/mrc_data/CMRC2018/aug/aug4.e338099
+    exec_host = sccdlb032/0*0
+    exec_vnode = (sccdlb032[0]:ngpus=1:ncpus=1+sccdlb032[1]:ngpus=1+sccdlb032[2
+	]:ngpus=1+sccdlb032[3]:ngpus=1+sccdlb032[4]:ngpus=1+sccdlb032[5]:ngpus=
+	1+sccdlb032[6]:ngpus=1+sccdlb032[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:15 2021
+    Output_Path = sccdlb001:/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch
+	/mrc_pytorch/run_mrc_cmrc2018_aug4.log
+    Priority = 0
+    qtime = Fri Aug  6 13:31:28 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 13:31:28 2021
+    session_id = 27075
+    jobdir = /home/MLTL-INTERN/zhangzs
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/zhangzs,
+	PBS_O_LANG=zh_CN.UTF-8,PBS_O_LOGNAME=zhangzs,
+	PBS_O_PATH=/usr/local/lib:/share03/zhangzs/cuda-10.0.130/bin:/usr/loca
+	l/lib:/share03/zhangzs/cuda-10.0.130/bin:/home/MLTL-INTERN/zhangzs/mini
+	conda3/envs/cmrc/bin:/home/MLTL-INTERN/zhangzs/miniconda3/condabin:/usr
+	/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/op
+	t/pbs/bin:/home/MLTL-INTERN/zhangzs/.local/bin:/home/MLTL-INTERN/zhangz
+	s/bin:/opt/pbs/bin,PBS_O_MAIL=/var/spool/mail/zhangzs,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_
+	pytorch/mrc_data/CMRC2018/aug,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,
+	PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 13:31 on (sccdlb032[0]:ngpus=1:ncpus=1+s
+	ccdlb032[1]:ngpus=1+sccdlb032[2]:ngpus=1+sccdlb032[3]:ngpus=1+sccdlb032
+	[4]:ngpus=1+sccdlb032[5]:ngpus=1+sccdlb032[6]:ngpus=1+sccdlb032[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 13:31:28 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N aug4 -l ngpus=8 /share03/zhangzs/CLUE/CLU
+	E/baselines/models_pytorch/mrc_pytorch/run_mrc_cmrc2018_aug4.sh -j oe -
+	o /share03/zhangzs/CLUE/CLUE/baselines/models_pytorch/mrc_pytorch/run_m
+	rc_cmrc2018_aug4.log
+    project = _pbs_project_default
+
+Job Id: 338100.sccpbs002
+    Job_Name = deen.bpe32k
+    Job_Owner = bmarie@sccdlb001
+    resources_used.cpupercent = 579
+    resources_used.cput = 06:01:57
+    resources_used.mem = 14635036kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 147944112kb
+    resources_used.walltime = 01:06:20
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 14:12:37 2021
+    Error_Path = sccdlb001:/home/MLTL/bmarie/deen.bpe32k.e338100
+    exec_host = sccdlb055/0*0
+    exec_vnode = (sccdlb055[0]:ngpus=1:ncpus=1+sccdlb055[1]:ngpus=1+sccdlb055[2
+	]:ngpus=1+sccdlb055[3]:ngpus=1+sccdlb055[4]:ngpus=1+sccdlb055[5]:ngpus=
+	1+sccdlb055[6]:ngpus=1+sccdlb055[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:18:56 2021
+    Output_Path = sccdlb001:/home/MLTL/bmarie/deen.bpe32k.o338100
+    Priority = 0
+    qtime = Fri Aug  6 14:12:37 2021
+    Rerunable = False
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 14:12:37 2021
+    session_id = 21796
+    jobdir = /home/MLTL/bmarie
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/bmarie,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=bmarie,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/bmarie/tools/anaconda3/envs
+	/pytorch/bin:/share03/bmarie/tools/anaconda3/condabin:/usr/lib64/qt-3.3
+	/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/sh
+	are03/securityL2/PBStools:/home/MLTL/bmarie/.local/bin:/home/MLTL/bmari
+	e/bin,PBS_O_MAIL=/var/spool/mail/bmarie,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL/bmarie,PBS_O_SYSTEM=Linux,
+	PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 14:12 on (sccdlb055[0]:ngpus=1:ncpus=1+s
+	ccdlb055[1]:ngpus=1+sccdlb055[2]:ngpus=1+sccdlb055[3]:ngpus=1+sccdlb055
+	[4]:ngpus=1+sccdlb055[5]:ngpus=1+sccdlb055[6]:ngpus=1+sccdlb055[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 14:12:37 2021
+    run_count = 1
+    Submit_arguments = -r n -N deen.bpe32k -q full-gpu -lngpus=8 tmp.psub.bmari
+	e.1628226757.10738
+    project = _pbs_project_default
+
+Job Id: 338101.sccpbs002
+    Job_Name = deen.bpe32k
+    Job_Owner = bmarie@sccdlb001
+    resources_used.cpupercent = 571
+    resources_used.cput = 05:57:54
+    resources_used.mem = 14637112kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 148359912kb
+    resources_used.walltime = 01:06:35
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 14:13:04 2021
+    Error_Path = sccdlb001:/home/MLTL/bmarie/deen.bpe32k.e338101
+    exec_host = sccdlb056/0*0
+    exec_vnode = (sccdlb056[0]:ngpus=1:ncpus=1+sccdlb056[1]:ngpus=1+sccdlb056[2
+	]:ngpus=1+sccdlb056[3]:ngpus=1+sccdlb056[4]:ngpus=1+sccdlb056[5]:ngpus=
+	1+sccdlb056[6]:ngpus=1+sccdlb056[7]:ngpus=1)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:19:37 2021
+    Output_Path = sccdlb001:/home/MLTL/bmarie/deen.bpe32k.o338101
+    Priority = 0
+    qtime = Fri Aug  6 14:13:04 2021
+    Rerunable = False
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=8
+    stime = Fri Aug  6 14:13:04 2021
+    session_id = 8909
+    jobdir = /home/MLTL/bmarie
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL/bmarie,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=bmarie,
+	PBS_O_PATH=/opt/GCC/gcc-8.2.0/bin:/share03/bmarie/tools/anaconda3/envs
+	/pytorch/bin:/share03/bmarie/tools/anaconda3/condabin:/usr/lib64/qt-3.3
+	/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/sh
+	are03/securityL2/PBStools:/home/MLTL/bmarie/.local/bin:/home/MLTL/bmari
+	e/bin,PBS_O_MAIL=/var/spool/mail/bmarie,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL/bmarie,PBS_O_SYSTEM=Linux,
+	PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 14:13 on (sccdlb056[0]:ngpus=1:ncpus=1+s
+	ccdlb056[1]:ngpus=1+sccdlb056[2]:ngpus=1+sccdlb056[3]:ngpus=1+sccdlb056
+	[4]:ngpus=1+sccdlb056[5]:ngpus=1+sccdlb056[6]:ngpus=1+sccdlb056[7]:ngpu
+	s=1)
+    etime = Fri Aug  6 14:13:04 2021
+    run_count = 1
+    Submit_arguments = -r n -N deen.bpe32k -q full-gpu -lngpus=8 tmp.psub.bmari
+	e.1628226784.10817
+    project = _pbs_project_default
+
+Job Id: 338103.sccpbs002
+    Job_Name = wc_wd
+    Job_Owner = zhangzs@sccdlb001
+    resources_used.cpupercent = 51
+    resources_used.cput = 00:01:31
+    resources_used.mem = 852428kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 101991716kb
+    resources_used.walltime = 00:01:16
+    job_state = R
+    queue = full-gpu
+    server = sccpbs002
+    Checkpoint = u
+    ctime = Fri Aug  6 15:18:43 2021
+    Error_Path = sccdlb001:/home/MLTL-INTERN/zhangzs/zhangzs/span-lm/electra_py
+	torch-master/wc_wd.e338103
+    exec_host = sccdlb020/1*0
+    exec_vnode = (sccdlb020[0]:ncpus=1+sccdlb020[4]:ngpus=1+sccdlb020[5]:ngpus=
+	1)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Fri Aug  6 15:20:00 2021
+    Output_Path = sccdlb001:/home/MLTL-INTERN/zhangzs/zhangzs/span-lm/electra_p
+	ytorch-master/sh_pre_wc_wd.log
+    Priority = 0
+    qtime = Fri Aug  6 15:18:43 2021
+    Rerunable = True
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 2
+    Resource_List.nodect = 1
+    Resource_List.place = pack
+    Resource_List.select = 1:ncpus=1:ngpus=2
+    stime = Fri Aug  6 15:18:44 2021
+    session_id = 16509
+    jobdir = /home/MLTL-INTERN/zhangzs
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/MLTL-INTERN/zhangzs,
+	PBS_O_LANG=zh_CN.UTF-8,PBS_O_LOGNAME=zhangzs,
+	PBS_O_PATH=/home/MLTL-INTERN/zhangzs/miniconda3/envs/electra/bin:/usr/
+	local/lib:/share03/zhangzs/cuda-10.0.130/bin:/usr/local/lib:/share03/zh
+	angzs/cuda-10.0.130/bin:/home/MLTL-INTERN/zhangzs/miniconda3/bin:/home/
+	MLTL-INTERN/zhangzs/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/loca
+	l/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/MLTL-INTERN
+	/zhangzs/.local/bin:/home/MLTL-INTERN/zhangzs/bin:/opt/pbs/bin,
+	PBS_O_MAIL=/var/spool/mail/zhangzs,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/MLTL-INTERN/zhangzs/zhangzs/span-lm/electra_pytorc
+	h-master,PBS_O_SYSTEM=Linux,PBS_O_QUEUE=full-gpu,PBS_O_HOST=sccdlb001
+    comment = Job run at Fri Aug 06 at 15:18 on (sccdlb020[0]:ncpus=1+sccdlb020
+	[4]:ngpus=1+sccdlb020[5]:ngpus=1)
+    etime = Fri Aug  6 15:18:43 2021
+    run_count = 1
+    Submit_arguments = -q full-gpu -N wc_wd -l ngpus=2 /home/MLTL-INTERN/zhangz
+	s/zhangzs/span-lm/electra_pytorch-master/sh_pre_wc_wd.sh -j oe -o /home
+	/MLTL-INTERN/zhangzs/zhangzs/span-lm/electra_pytorch-master/sh_pre_wc_w
+	d.log
+    project = _pbs_project_default
+
