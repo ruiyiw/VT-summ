@@ -435,8 +435,83 @@ class CvaeTrans(nn.Module):
             self.optimizer.step()
 
         return loss_rec.item(), math.exp(min(loss_rec.item(), 100)), kld_loss.item(), aux, elbo.item()
+    
+    def train_n_batch(self, batchs, iter, train=True):
+        
+        if (train):
+            if(config.noam):
+                self.optimizer.optimizer.zero_grad()
+            else:
+                self.optimizer.zero_grad()
 
+        for batch in batchs:
+            enc_batch, _, _, enc_batch_extend_vocab, extra_zeros, _, _ = get_input_from_batch(batch)
+            dec_batch, _, _, _, _ = get_output_from_batch(batch)
+            ## Response encode
+            mask_res = batch["posterior_batch"].data.eq(config.PAD_idx).unsqueeze(1)
+            posterior_mask = self.embedding(batch["posterior_mask"])
+            r_encoder_outputs = self.r_encoder(self.embedding(batch["posterior_batch"])+posterior_mask,mask_res)
+            ## Encode
+            mask_src = enc_batch.data.eq(config.PAD_idx).unsqueeze(1)
+            emb_mask = self.embedding(batch["input_mask"])
+            encoder_outputs = self.encoder(self.embedding(enc_batch)+emb_mask,mask_src)
+            #latent variable
+            if config.model=="cvaetrs":
+                kld_loss, z = self.latent_layer(encoder_outputs[:,0], r_encoder_outputs[:,0], train=True)
 
+            # meta = self.embedding(batch["program_label"]) ---
+            # if config.dataset=="empathetic":
+            #     meta = meta-meta
+            # Decode
+            sos_token = torch.LongTensor([config.SOS_idx] * enc_batch.size(0)).unsqueeze(1)
+            if config.USE_CUDA: sos_token = sos_token.cuda()
+
+            dec_batch_shift = torch.cat((sos_token,dec_batch[:, :-1]),1) #(batch, len, embedding)
+            mask_trg = dec_batch_shift.data.eq(config.PAD_idx).unsqueeze(1)
+            input_vector = self.embedding(dec_batch_shift)
+            if config.model=="cvaetrs": 
+                # input_vector[:,0] = input_vector[:,0]+z+meta
+                input_vector[:,0] = input_vector[:,0]+z
+            else:
+                # input_vector[:,0] = input_vector[:,0]+meta
+                input_vector[:,0] = input_vector[:,0]
+            pre_logit, attn_dist = self.decoder(input_vector,encoder_outputs, (mask_src,mask_trg))
+            
+            ## compute output dist
+            logit = self.generator(pre_logit,attn_dist,enc_batch_extend_vocab if config.pointer_gen else None, extra_zeros, attn_dist_db=None)
+            ## loss: NNL if ptr else Cross entropy
+            loss_rec = self.criterion(logit.contiguous().view(-1, logit.size(-1)), dec_batch.contiguous().view(-1))
+            if config.model=="cvaetrs":
+                # z_logit = self.bow(z+meta) # [batch_size, vocab_size]
+                z_logit = self.bow(z) # [batch_size, vocab_size]
+                z_logit = z_logit.unsqueeze(1).repeat(1,logit.size(1),1)
+                loss_aux = self.criterion(z_logit.contiguous().view(-1, z_logit.size(-1)), dec_batch.contiguous().view(-1))
+                if config.multitask:
+                    emo_logit = self.emo(encoder_outputs[:,0])
+                    emo_loss = self.emo_criterion(emo_logit, batch["program_label"]-9)
+                #kl_weight = min(iter/config.full_kl_step, 0.28) if config.full_kl_step >0 else 1.0
+                kl_weight = min(math.tanh(6 * iter/config.full_kl_step - 3) + 1, 1)
+                loss = loss_rec + config.kl_ceiling * kl_weight*kld_loss + config.aux_ceiling*loss_aux
+                if config.multitask:
+                    loss = loss_rec + config.kl_ceiling * kl_weight*kld_loss + config.aux_ceiling*loss_aux + emo_loss
+                aux = loss_aux.item()
+                elbo = loss_rec+kld_loss
+            else:
+                loss = loss_rec
+                elbo = loss_rec
+                kld_loss = torch.Tensor([0])
+                aux = 0
+                if config.multitask:
+                    emo_logit = self.emo(encoder_outputs[:,0])
+                    emo_loss = self.emo_criterion(emo_logit, batch["program_label"]-9)
+                    loss = loss_rec+emo_loss
+            if(train):
+                loss.backward()
+        # clip gradient
+        nn.utils.clip_grad_norm_(self.parameters(), config.max_grad_norm)
+        self.optimizer.step()
+
+        return loss_rec.item(), math.exp(min(loss_rec.item(), 100)), kld_loss.item(), aux, elbo.item()
 
     def decoder_greedy(self, batch, max_dec_step=50):
         enc_batch, _, _, enc_batch_extend_vocab, extra_zeros, _, _ = get_input_from_batch(batch)

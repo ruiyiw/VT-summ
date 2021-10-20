@@ -493,6 +493,3 @@ class BERTCvaeTrans(nn.Module):
                 else: st+= e + ' '
             sent.append(st)
         return sent
-
-
-def 
