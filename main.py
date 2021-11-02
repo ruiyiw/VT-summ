@@ -74,11 +74,11 @@ try:
     writer = SummaryWriter(log_dir=config.save_path)
     weights_best = deepcopy(model.state_dict())
     data_iter = make_infinite(data_loader_tra)
-    for n_iter in tqdm(range(1000000)):
+    for n_iter in tqdm(range(100000000)):
         
-        if epoch > 1000: break  # Set manual stop
+        if epoch > config.epochs: break  # Set manual stop
 
-        if config.gradient_accumulation_steps>1: # Don't look at this for gigaword (at least now)
+        if config.gradient_accumulation_steps>1: 
             loss, ppl, kld, bow, elbo = model.train_n_batch([next(data_iter) for i in range(config.gradient_accumulation_steps)],n_iter)
         else:
             loss, ppl, kld, bow, elbo = model.train_one_batch(next(data_iter),n_iter)

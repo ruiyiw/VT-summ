@@ -70,6 +70,7 @@ parser.add_argument("--depth", type=int, default=256)
 parser.add_argument("--filter", type=int, default=512)
 # bert pretrain
 parser.add_argument("--bert-hidden-dim", type=int, default=768)
+parser.add_argument("--epochs", type=int, default=1000)
 
 def print_opts(opts):
     """Prints the values of all command-line arguments.
@@ -148,6 +149,7 @@ act_loss_weight = arg.act_loss_weight
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m-%d %H:%M')#,filename='save/logs/{}.log'.format(str(name)))
 collect_stats = False
 bert_hidden_dim = arg.bert_hidden_dim
+epochs = arg.epochs
 
 
 #for interactive human evluation

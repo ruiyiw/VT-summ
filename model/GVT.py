@@ -261,6 +261,8 @@ class Latent(nn.Module):
             if config.USE_CUDA: eps = eps.cuda()
             z = eps * std + mean_p
         return kld_loss, z
+
+
 class CvaeTrans(nn.Module):
 
     # def __init__(self, vocab, emo_number,  model_file_path=None, is_eval=False, load_optim=False):
@@ -293,6 +295,9 @@ class CvaeTrans(nn.Module):
             self.generator.proj.weight = self.embedding.lut.weight
 
         self.criterion = nn.NLLLoss(ignore_index=config.PAD_idx)
+
+        # Add gate
+        self.gate = nn.Linear(config.hidden_dim, 1)
  
 
         if model_file_path is not None:
@@ -394,7 +399,12 @@ class CvaeTrans(nn.Module):
         input_vector = self.embedding(dec_batch_shift)
         if config.model=="cvaetrs": 
             # input_vector[:,0] = input_vector[:,0]+z+meta
-            input_vector[:,0] = input_vector[:,0]+z
+            # input_vector[:,0] = input_vector[:,0]+z # z: (seq_len, hidden_dim)
+            # Add gate
+            gate_c = self.gate(input_vector[:,0])
+            gate_c = torch.sigmoid(gate_c)
+            input_vector[:,0] = gate_c * input_vector[:,0] + (gate_c.new_tensor([1]) - gate_c) * z
+
         else:
             # input_vector[:,0] = input_vector[:,0]+meta
             input_vector[:,0] = input_vector[:,0]
@@ -471,7 +481,11 @@ class CvaeTrans(nn.Module):
             input_vector = self.embedding(dec_batch_shift)
             if config.model=="cvaetrs": 
                 # input_vector[:,0] = input_vector[:,0]+z+meta
-                input_vector[:,0] = input_vector[:,0]+z
+                # input_vector[:,0] = input_vector[:,0]+z
+                # Add gate
+                gate_c = self.gate(input_vector[:,0])
+                gate_c = torch.sigmoid(gate_c)
+                input_vector[:,0] = gate_c * input_vector[:,0] + (gate_c.new_tensor([1]) - gate_c) * z
             else:
                 # input_vector[:,0] = input_vector[:,0]+meta
                 input_vector[:,0] = input_vector[:,0]
@@ -536,7 +550,11 @@ class CvaeTrans(nn.Module):
             input_vector = self.embedding(ys)
             if config.model=="cvaetrs":
                 # input_vector[:,0] = input_vector[:,0]+z+meta
-                input_vector[:,0] = input_vector[:,0]+z
+                # input_vector[:,0] = input_vector[:,0]+z
+                # Add gate
+                gate_c = self.gate(input_vector[:,0])
+                gate_c = torch.sigmoid(gate_c)
+                input_vector[:,0] = gate_c * input_vector[:,0] + (gate_c.new_tensor([1]) - gate_c) * z
             else:
                 # input_vector[:,0] = input_vector[:,0]+meta
                 input_vector[:,0] = input_vector[:,0]
