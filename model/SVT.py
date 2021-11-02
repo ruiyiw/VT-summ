@@ -241,6 +241,10 @@ class CvaeTrans(nn.Module):
             self.generator.proj.weight = self.embedding.lut.weight
 
         self.criterion = nn.NLLLoss(ignore_index=config.PAD_idx)
+
+        # Add gate
+        self.gate = nn.Linear(config.hidden_dim, 1)
+        
         # if config.multitask:
         #     self.emo = SoftmaxOutputLayer(config.hidden_dim,emo_number)
         #     self.emo_criterion = nn.NLLLoss()
@@ -365,10 +369,12 @@ class CvaeTrans(nn.Module):
         return loss_rec.item(), math.exp(min(loss_rec.item(), 100)), kld_loss.item(), loss_aux.item(), elbo.item()
 
     def train_n_batch(self, batchs, iter, train=True):
-        if(config.noam):
-            self.optimizer.optimizer.zero_grad()
-        else:
-            self.optimizer.zero_grad()
+        if train:
+            if(config.noam):
+                self.optimizer.optimizer.zero_grad()
+            else:
+                self.optimizer.zero_grad()
+
         for batch in batchs:
             enc_batch, _, _, enc_batch_extend_vocab, extra_zeros, _, _ = get_input_from_batch(batch)
             dec_batch, _, _, _, _ = get_output_from_batch(batch)
