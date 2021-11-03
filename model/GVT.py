@@ -488,10 +488,10 @@ class CvaeTrans(nn.Module):
                 print(gate_c.size())
                 gate_c = torch.sigmoid(gate_c)
                 print(input_vector[:,0].size())
-                print(gate_c.new_tensor([1]).size())
+                print((gate_c.new_tensor([1])-gate_c).size())
                 print(z.size())
                 input_vector[:,0] = gate_c * input_vector[:,0] + (gate_c.new_tensor([1]) - gate_c) * z
-                print(input_vector[:,0])
+                print(input_vector[:,0].size())
             else:
                 # input_vector[:,0] = input_vector[:,0]+meta
                 input_vector[:,0] = input_vector[:,0]
