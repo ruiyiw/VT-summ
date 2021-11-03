@@ -401,9 +401,9 @@ class CvaeTrans(nn.Module):
             # input_vector[:,0] = input_vector[:,0]+z+meta
             # input_vector[:,0] = input_vector[:,0]+z # z: (seq_len, hidden_dim)
             # Add gate
-            gate_c = self.gate(input_vector[:,0])
+            gate_c = self.gate(input_vector[:,0].clone().detach())
             gate_c = torch.sigmoid(gate_c)
-            input_vector[:,0] = gate_c * input_vector[:,0] + (gate_c.new_tensor([1]) - gate_c) * z
+            input_vector[:,0] = gate_c * (input_vector[:,0].clone().detach()) + (gate_c.new_tensor([1]) - gate_c) * z
 
         else:
             # input_vector[:,0] = input_vector[:,0]+meta
