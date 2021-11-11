@@ -1007,7 +1007,7 @@ def evaluate(model, data,  ty='valid', max_dec_step=50):
     
     print("rd1:{},rd2:{},rd3:{}".format(rd1,rd2,rd3))
     print("EVAL\tLoss\tPPL\tKLD\tBOW\tELBO\tBleu_g\td1\td2\td3")
-    print("{}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.2f}\t{:.4f}\t{:.4f}\t{:.4f}".format(ty,loss,math.exp(loss), bleu_score_g, gd1,gd2,gd3))
+    print("{}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.2f}\t{:.4f}\t{:.4f}\t{:.4f}".format(ty,loss,math.exp(loss), kld, bow, elbo, bleu_score_g, gd1,gd2,gd3))
     
     return loss, math.exp(loss), kld, bow, elbo, bleu_score_g, gd1,gd2,gd3
 
