@@ -78,7 +78,7 @@ def read_langs(vocab):
 
 def load_dataset():
     if(os.path.exists('data/cnn_dm/dataset_preproc.p')):
-        print("LOADING gigaword")
+        print("LOADING cnn_dm")
         with open('data/cnn_dm/dataset_preproc.p', "rb") as f:
             [data_tra, data_val, data_tst, vocab] = pickle.load(f)
     else:
