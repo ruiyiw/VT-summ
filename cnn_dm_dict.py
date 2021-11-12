@@ -68,7 +68,7 @@ with open(path+"test.source", 'r', encoding='utf-8') as fin:
                 vocab[w] = 0
 
 
-with open([path+"vocab.txt", 'w', encoding='utf-8') as fout:
+with open(path+"vocab.txt", 'w', encoding='utf-8') as fout:
     for k in vocab.keys():
         fout.write(k)
         fout.write('\n')
