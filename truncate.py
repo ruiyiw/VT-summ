@@ -40,7 +40,6 @@ with open(path+"train.source", 'r', encoding='utf-8') as fin:
         # line = line.strip().split()
         line = line.strip()
         token = sent_tokenize(line)
-        print(token)
         if len(token) == 1:
             text.append(token[0])
             count += 1
