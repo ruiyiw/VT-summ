@@ -38,6 +38,7 @@ with open(path+"train.source", 'r', encoding='utf-8') as fin:
         # line = line.strip().split()
         line = line.strip()
         token = sent_tokenize(line)
+        print(token)
         if len(token) < 2:
             text.append(token[0])
         else:
