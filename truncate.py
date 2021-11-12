@@ -22,7 +22,8 @@
 # # data_loader_tra, data_loader_val, data_loader_tst, vocab, program_number = prepare_data_seq(batch_size=config.batch_size)
 # data_loader_tra, data_loader_val, data_loader_tst, vocab = prepare_data_seq(batch_size=config.batch_size) # data_loader with batch
 # logging.info("dataloader size - tra: {} dev: {} tst: {}".format(data_loader_tra.__len__(), data_loader_val.__len__(), data_loader_tst.__len__()))
-
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 path = "data/cnn_dm_data/"
 text = []
