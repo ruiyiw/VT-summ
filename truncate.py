@@ -25,6 +25,7 @@
 import nltk
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
+import logging
 
 # sentence = "Hello world . Hello world ! Hello world ?"
 # token = sent_tokenize(sentence)
@@ -32,6 +33,7 @@ from nltk.tokenize import sent_tokenize
 # text = token[0]+token[1]
 # print(text)
 path = "data/cnn_dm_data/"
+count = 0
 text = []
 with open(path+"train.source", 'r', encoding='utf-8') as fin:
     for line in fin:
@@ -41,15 +43,19 @@ with open(path+"train.source", 'r', encoding='utf-8') as fin:
         print(token)
         if len(token) == 1:
             text.append(token[0])
+            count += 1
         elif len(token) > 1:
             text.append(token[0]+token[1])
+            count += 1
 
 with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
     for t in text:
         fout.write(t)
         fout.write('\n')
 
+logging.info("Train", count)
 
+count = 0
 text = []
 with open(path+"val.source", 'r', encoding='utf-8') as fin:
     for line in fin:
@@ -58,15 +64,19 @@ with open(path+"val.source", 'r', encoding='utf-8') as fin:
         token = sent_tokenize(line)
         if len(token) == 1:
             text.append(token[0])
+            count += 1
         elif len(token) > 1:
             text.append(token[0]+token[1])
+            count += 1
 
 with open(path+"val.source.pre", 'w', encoding='utf-8') as fout:
     for t in text:
         fout.write(t)
         fout.write('\n')
 
+logging.info("Val", count)
 
+count = 0
 text = []
 with open(path+"test.source", 'r', encoding='utf-8') as fin:
     for line in fin:
@@ -75,10 +85,14 @@ with open(path+"test.source", 'r', encoding='utf-8') as fin:
         token = sent_tokenize(line)
         if len(token) == 1:
             text.append(token[0])
+            count += 1
         elif len(token) > 1:
             text.append(token[0]+token[1])
+            count += 1
 
 with open(path+"test.source.pre", 'w', encoding='utf-8') as fout:
     for t in text:
         fout.write(t)
         fout.write('\n')
+
+logging.info("Test", count)
