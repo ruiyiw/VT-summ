@@ -37,10 +37,11 @@ with open(path+"test.target", 'r', encoding='utf-8') as fin:
     for line in fin:
         # line = line.strip().split()
         line = line.strip()
-        print(line)
         token = sent_tokenize(line)
-        print(token)
-        text.append(token[0]+token[1])
+        if len(token) < 2:
+            text.append(token[0])
+        else:
+            text.append(token[0]+token[1])
 
 with open(path+"test.target.pre", 'w', encoding='utf-8') as fout:
     for t in text:
