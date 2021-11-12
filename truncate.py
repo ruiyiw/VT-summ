@@ -41,7 +41,7 @@ with open(path+"train.source", 'r', encoding='utf-8') as fin:
         print(token)
         if len(token) == 1:
             text.append(token[0])
-        else:
+        elif len(token) > 1:
             text.append(token[0]+token[1])
 
 with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
@@ -50,35 +50,35 @@ with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
         fout.write('\n')
 
 
-# text = []
-# with open(path+"val.source", 'r', encoding='utf-8') as fin:
-#     for line in fin:
-#         # line = line.strip().split()
-#         line = line.strip()
-#         token = sent_tokenize(line)
-#         if len(token) < 2:
-#             text.append(token[0])
-#         else:
-#             text.append(token[0]+token[1])
+text = []
+with open(path+"val.source", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        if len(token) == 1:
+            text.append(token[0])
+        elif len(token) > 1:
+            text.append(token[0]+token[1])
 
-# with open(path+"val.source.pre", 'w', encoding='utf-8') as fout:
-#     for t in text:
-#         fout.write(t)
-#         fout.write('\n')
+with open(path+"val.source.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
 
 
-# text = []
-# with open(path+"test.source", 'r', encoding='utf-8') as fin:
-#     for line in fin:
-#         # line = line.strip().split()
-#         line = line.strip()
-#         token = sent_tokenize(line)
-#         if len(token) < 2:
-#             text.append(token[0])
-#         else:
-#             text.append(token[0]+token[1])
+text = []
+with open(path+"test.source", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        if len(token) == 1:
+            text.append(token[0])
+        elif len(token) > 1:
+            text.append(token[0]+token[1])
 
-# with open(path+"test.source.pre", 'w', encoding='utf-8') as fout:
-#     for t in text:
-#         fout.write(t)
-#         fout.write('\n')
+with open(path+"test.source.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
