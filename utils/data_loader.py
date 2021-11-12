@@ -18,6 +18,8 @@ from model.common_layer import write_config
 #     from utils.mojitalk_reader import load_dataset
 if config.dataset=="gigaword":
     from utils.gigaword_reader import load_dataset
+elif config.dataset=="cnn_dm":
+    from utils.cnn_dm_reader import load_dataset
 
 
 class Dataset(data.Dataset):
