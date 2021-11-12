@@ -26,13 +26,13 @@
 from nltk.tokenize import sent_tokenize
 path = "data/cnn_dm_data/"
 text = []
-with open(path+"train.target", 'r', encoding='utf-8') as fin:
+with open(path+"test.target", 'r', encoding='utf-8') as fin:
     for line in fin:
         line = line.strip().split()
         token = sent_tokenize(line)
         text.append(token[0]+token[1])
 
-with open(path+"train.target.pre", 'w', encoding='utf-8') as fout:
+with open(path+"test.target.pre", 'w', encoding='utf-8') as fout:
     for t in text:
         fout.write(t)
         fout.write('\n')
