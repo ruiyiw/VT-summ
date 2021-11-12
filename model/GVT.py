@@ -465,6 +465,9 @@ class CvaeTrans(nn.Module):
             ## Encode
             mask_src = enc_batch.data.eq(config.PAD_idx).unsqueeze(1)
             emb_mask = self.embedding(batch["input_mask"])
+            logging.info(emb_mask.size())
+            logging.info(mask_src.size())
+            logging.info(enc_batch.size())
             encoder_outputs = self.encoder(self.embedding(enc_batch)+emb_mask,mask_src)
             #latent variable
             if config.model=="cvaetrs":
