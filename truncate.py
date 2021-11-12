@@ -28,6 +28,7 @@ from nltk.tokenize import sent_tokenize
 
 sentence = ["Hello world. Hello world! Hello world?"]
 token = sent_tokenize(sentence)
+print(token)
 text = token[0]+token[1]
 print(text)
 # path = "data/cnn_dm_data/"
