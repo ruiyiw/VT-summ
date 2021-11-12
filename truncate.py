@@ -26,20 +26,21 @@ import nltk
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 
-sentence = "Hello world. Hello world! Hello world?"
-token = sent_tokenize(sentence)
-print(token)
-text = token[0]+token[1]
-print(text)
-# path = "data/cnn_dm_data/"
-# text = []
-# with open(path+"test.target", 'r', encoding='utf-8') as fin:
-#     for line in fin:
-#         line = line.strip().split()
-#         token = sent_tokenize(line)
-#         text.append(token[0]+token[1])
+# sentence = "Hello world . Hello world ! Hello world ?"
+# token = sent_tokenize(sentence)
+# print(token)
+# text = token[0]+token[1]
+# print(text)
+path = "data/cnn_dm_data/"
+text = []
+with open(path+"test.target", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        text.append(token[0]+token[1])
 
-# with open(path+"test.target.pre", 'w', encoding='utf-8') as fout:
-#     for t in text:
-#         fout.write(t)
-#         fout.write('\n')
+with open(path+"test.target.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
