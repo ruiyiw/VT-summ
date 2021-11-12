@@ -1,8 +1,8 @@
-grep "^Greedy:" gvt-64-pre/cvae_trs_e299/out_e1000.txt > greedy.txt
-sed 's/Greedy://1' greedy.txt > hyp_e1000.txt
-mv hyp_e1000.txt gvt-64-pre/cvae_trs_e299/
-grep "^Ref:" gvt-64-pre/cvae_trs_e299/out_e1000.txt > example.txt
-sed 's/Ref://1' example.txt > ref_e1000.txt
-mv ref_e1000.txt gvt-64-pre/cvae_trs_e299/
-python3 score.py --path gvt-64-pre/cvae_trs_e299 --hyp hyp_e1000.txt --ref ref_e1000.txt
-python3 bleu.py --path gvt-64-pre/cvae_trs_e299 --hyp hyp_e1000.txt --ref ref_e1000.txt
+PATH=save/gvt-128-pre/pre-trs-1000
+
+grep "^Greedy:" ${PATH}/result.txt > ${PATH}/greedy.txt
+sed 's/Greedy://1' ${PATH}/greedy.txt > ${PATH}/hyp.txt
+grep "^Ref:" ${PATH}/result.txt > ${PATH}/example.txt
+sed 's/Ref://1' ${PATH}/example.txt > ${PATH}/ref.txt
+python3 score.py --path ${PATH} --hyp hyp.txt --ref ref.txt
+python3 bleu.py --path ${PATH} --hyp hyp.txt --ref ref.txt
