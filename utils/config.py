@@ -71,6 +71,7 @@ parser.add_argument("--filter", type=int, default=512)
 # bert pretrain
 parser.add_argument("--bert-hidden-dim", type=int, default=768)
 parser.add_argument("--epochs", type=int, default=1000)
+parser.add_argument("--enc_maxlen", type=int, default=1000)
 
 def print_opts(opts):
     """Prints the values of all command-line arguments.
@@ -150,6 +151,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', datefm
 collect_stats = False
 bert_hidden_dim = arg.bert_hidden_dim
 epochs = arg.epochs
+enc_maxlen = arg.enc_maxlen
 
 
 #for interactive human evluation
