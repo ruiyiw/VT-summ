@@ -33,7 +33,7 @@ from nltk.tokenize import sent_tokenize
 # print(text)
 path = "data/cnn_dm_data/"
 text = []
-with open(path+"test.target", 'r', encoding='utf-8') as fin:
+with open(path+"train.source", 'r', encoding='utf-8') as fin:
     for line in fin:
         # line = line.strip().split()
         line = line.strip()
@@ -43,7 +43,41 @@ with open(path+"test.target", 'r', encoding='utf-8') as fin:
         else:
             text.append(token[0]+token[1])
 
-with open(path+"test.target.pre", 'w', encoding='utf-8') as fout:
+with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
+
+
+text = []
+with open(path+"val.source", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        if len(token) < 2:
+            text.append(token[0])
+        else:
+            text.append(token[0]+token[1])
+
+with open(path+"val.source.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
+
+
+text = []
+with open(path+"test.source", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        if len(token) < 2:
+            text.append(token[0])
+        else:
+            text.append(token[0]+token[1])
+
+with open(path+"test.source.pre", 'w', encoding='utf-8') as fout:
     for t in text:
         fout.write(t)
         fout.write('\n')
