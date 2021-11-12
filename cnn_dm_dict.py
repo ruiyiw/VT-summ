@@ -1,4 +1,4 @@
-path = "data/cnn_dm/"
+path = "data/cnn_dm_data/"
 vocab = {}
 punctuation = '",.;:!?' + "'"
 with open(path+"train.target", 'r', encoding='utf-8') as fin:
