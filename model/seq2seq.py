@@ -342,6 +342,23 @@ class SeqToSeq(nn.Module):
         self.best_path = model_save_path
         torch.save(state, model_save_path)
 
+    def save_model_by_epoch(self, epoch, running_avg_ppl, iter, f1_g,f1_b,ent_g,ent_b):
+        state = {
+            'iter': iter,
+            'encoder_state_dict': self.encoder.state_dict(),
+            'r_encoder_state_dict': self.r_encoder.state_dict(),
+            'decoder_state_dict': self.decoder.state_dict(),
+            'generator_dict': self.generator.state_dict(),
+            'embedding_dict': self.embedding.state_dict(),
+            'latent_dict': self.latent_layer.state_dict(),
+            'bow': self.bow.state_dict(),
+            'optimizer': self.optimizer.state_dict(),
+            'current_loss': running_avg_ppl
+        }
+        model_save_path = os.path.join(self.model_dir, 'model_epoch{}_iter{}_{:.4f}_{:.4f}_{:.4f}_{:.4f}_{:.4f}'.format(epoch, iter,running_avg_ppl,f1_g,f1_b,ent_g,ent_b))
+        self.best_path = model_save_path
+        torch.save(state, model_save_path)
+
     def train_one_batch(self, batch, n_iter, train=True):
         enc_batch, enc_padding_mask, enc_lens, enc_batch_extend_vocab, extra_zeros, c_t_1, coverage = \
             get_input_from_batch(batch)
