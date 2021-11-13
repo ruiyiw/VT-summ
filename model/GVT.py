@@ -27,7 +27,7 @@ class Encoder(nn.Module):
     Refer Fig.1 in https://arxiv.org/pdf/1706.03762.pdf
     """
     def __init__(self, embedding_size, hidden_size, num_layers, num_heads, total_key_depth, total_value_depth,
-                 filter_size, max_length=1200, input_dropout=0, layer_dropout=0, 
+                 filter_size, max_length=6000, input_dropout=0, layer_dropout=0, 
                  attention_dropout=0.1, relu_dropout=0.1, use_mask=False, universal=False):
         """
         Parameters:
@@ -117,7 +117,7 @@ class Decoder(nn.Module):
     Refer Fig.1 in https://arxiv.org/pdf/1706.03762.pdf
     """
     def __init__(self, embedding_size, hidden_size, num_layers, num_heads, total_key_depth, total_value_depth,
-                 filter_size, max_length=300, input_dropout=0, layer_dropout=0, 
+                 filter_size, max_length=600, input_dropout=0, layer_dropout=0, 
                  attention_dropout=0.1, relu_dropout=0.1, universal=False):
         """
         Parameters:
