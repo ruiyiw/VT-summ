@@ -36,41 +36,56 @@ path = "data/cnn_dm_data/"
 
 count = 0
 text = []
-empty = []
-with open(path+"train.source", 'r', encoding='utf-8') as fin:
+with open(path+"train.target.pre", 'r', encoding='utf-8') as fin:
     for line in fin:
         # line = line.strip().split()
         line = line.strip()
         token = sent_tokenize(line)
-        # if len(token) == 1:
-        #     # text.append(token[0])
-        # elif len(token) > 1:
-        #     # text.append(token[0]+token[1])
-        if len(token) == 0:
-            empty.append(count)
+        text.append(token[0])
         count += 1
 
-# with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
-#     for t in text:
-#         fout.write(t)
-#         fout.write('\n')
-print("source", count)
-print(empty)
-
-count = 0
-target = []
-with open(path+"train.target", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        if count not in empty:
-            line = line.strip()
-            target.append(line)
-    count += 1
-print("target", count)
-
-with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
-    for t in target:
+with open(path+"train.target.pre2", 'w', encoding='utf-8') as fout:
+    for t in text:
         fout.write(t)
         fout.write('\n')
+
+print(count)
+
+count = 0
+text = []
+with open(path+"val.target", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        text.append(token[0])
+        count += 1
+
+with open(path+"val.target.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
+
+print(count)
+
+
+count = 0
+text = []
+with open(path+"test.target", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        text.append(token[0])
+        count += 1
+
+with open(path+"test.target.pre", 'w', encoding='utf-8') as fout:
+    for t in text:
+        fout.write(t)
+        fout.write('\n')
+
+print(count)
+
 
 # logging.info("Train", count)
 
@@ -116,39 +131,39 @@ with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
 
 # logging.info("Test", count)
 
-path = "data/cnn_dm_data/"
-count = 0
-with open(path+"train.source.pre", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        count += 1
-print("Train source", count)
+# path = "data/cnn_dm_data/"
+# count = 0
+# with open(path+"train.source.pre", 'r', encoding='utf-8') as fin:
+#     for line in fin:
+#         count += 1
+# print("Train source", count)
 
-count = 0
-with open(path+"val.source.pre", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        count += 1
-print("Val source", count)
+# count = 0
+# with open(path+"val.source.pre", 'r', encoding='utf-8') as fin:
+#     for line in fin:
+#         count += 1
+# print("Val source", count)
 
-count = 0
-with open(path+"test.source.pre", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        count += 1
-print("Test source", count)
+# count = 0
+# with open(path+"test.source.pre", 'r', encoding='utf-8') as fin:
+#     for line in fin:
+#         count += 1
+# print("Test source", count)
 
-count = 0
-with open(path+"train.target.pre", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        count += 1
-print("Train target", count)
+# count = 0
+# with open(path+"train.target.pre", 'r', encoding='utf-8') as fin:
+#     for line in fin:
+#         count += 1
+# print("Train target", count)
 
-count = 0
-with open(path+"val.target", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        count += 1
-print("Val target", count)
+# count = 0
+# with open(path+"val.target", 'r', encoding='utf-8') as fin:
+#     for line in fin:
+#         count += 1
+# print("Val target", count)
 
-count = 0
-with open(path+"test.target", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        count += 1
-print("Test target", count)
+# count = 0
+# with open(path+"test.target", 'r', encoding='utf-8') as fin:
+#     for line in fin:
+#         count += 1
+# print("Test target", count)
