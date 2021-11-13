@@ -43,17 +43,17 @@ def read_langs(vocab):
     with open("data/cnn_dm_data/vocab.txt", encoding='utf-8') as f:
         for word in f:
             vocab.index_word(word.strip())
-    with open("data/cnn_dm_data/train.source", encoding='utf-8') as f:
+    with open("data/cnn_dm_data/train.source.pre", encoding='utf-8') as f:
         for line in f:
             line = line.strip().split()
             data_train['context'].append(line)
-    with open("data/cnn_dm_data/train.target", encoding='utf-8') as f:
+    with open("data/cnn_dm_data/train.target.pre", encoding='utf-8') as f:
         for line in f:
             line = line.strip().split()
             data_train['target'].append(line)
     assert len(data_train['context']) == len(data_train['target'])
 
-    with open("data/cnn_dm_data/val.source", encoding='utf-8') as f:
+    with open("data/cnn_dm_data/val.source.pre", encoding='utf-8') as f:
         for line in f:
             line = line.strip().split()
             data_dev['context'].append(line)
@@ -63,7 +63,7 @@ def read_langs(vocab):
             data_dev['target'].append(line)
     assert len(data_dev['context']) == len(data_dev['target'])
 
-    with open("data/cnn_dm_data/test.source", encoding='utf-8') as f:
+    with open("data/cnn_dm_data/test.source.pre", encoding='utf-8') as f:
         for line in f:
             line = line.strip().split()
             data_test['context'].append(line)
