@@ -22,58 +22,55 @@
 # # # data_loader_tra, data_loader_val, data_loader_tst, vocab, program_number = prepare_data_seq(batch_size=config.batch_size)
 # # data_loader_tra, data_loader_val, data_loader_tst, vocab = prepare_data_seq(batch_size=config.batch_size) # data_loader with batch
 # # logging.info("dataloader size - tra: {} dev: {} tst: {}".format(data_loader_tra.__len__(), data_loader_val.__len__(), data_loader_tst.__len__()))
-# import nltk
-# nltk.download('punkt')
-# from nltk.tokenize import sent_tokenize
-# # import logging
+import nltk
+nltk.download('punkt')
+from nltk.tokenize import sent_tokenize
+# import logging
 
-# # # sentence = "Hello world . Hello world ! Hello world ?"
-# # # token = sent_tokenize(sentence)
-# # # print(token)
-# # # text = token[0]+token[1]
-# # # print(text)
-# path = "data/cnn_dm_data/"
+# # sentence = "Hello world . Hello world ! Hello world ?"
+# # token = sent_tokenize(sentence)
+# # print(token)
+# # text = token[0]+token[1]
+# # print(text)
+path = "data/cnn_dm_data/"
 
-# count = 0
-# empty = []
-# with open(path+"train.source", 'r', encoding='utf-8') as fin:
-#     for line in fin:
-#         # line = line.strip().split()
-#         line = line.strip()
-#         token = sent_tokenize(line)
-#         # if len(token) == 1:
-#         #     # text.append(token[0])
-#         # elif len(token) > 1:
-#         #     # text.append(token[0]+token[1])
-#         if len(token) == 0:
-#             empty.append(count)
-#         count += 1
-
-# # with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
-# #     for t in text:
-# #         fout.write(t)
-# #         fout.write('\n')
-
-
-# count = 0
-# target = []
-# with open(path+"train.target", 'r', encoding='utf-8') as fin:
-#     for line in fin:
-#         if count not in empty:
-#             line = line.strip()
-#             target.append(line)
-#     count += 1
-
-# with open(path+"train.target.pre", 'w', encoding='utf-8') as fout:
-#     for t in target:
-#         fout.write(t)
-#         fout.write('\n')
-
+count = 0
+text = []
+empty = []
+with open(path+"train.source", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        # if len(token) == 1:
+        #     # text.append(token[0])
+        # elif len(token) > 1:
+        #     # text.append(token[0]+token[1])
+        if len(token) == 0:
+            empty.append(count)
+        count += 1
 
 # with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
 #     for t in text:
 #         fout.write(t)
 #         fout.write('\n')
+print("source", count)
+print(empty)
+
+count = 0
+target = []
+with open(path+"train.target", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        if count not in empty:
+            line = line.strip()
+            target.append(line)
+    count += 1
+print("target", count)
+
+with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
+    for t in target:
+        fout.write(t)
+        fout.write('\n')
 
 # logging.info("Train", count)
 
