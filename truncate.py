@@ -34,26 +34,40 @@ from nltk.tokenize import sent_tokenize
 # # print(text)
 path = "data/cnn_dm_data/"
 
-target = []
-with open(path+"train.target", 'r', encoding='utf-8') as fin:
-    for line in fin:
-        line = line.strip()
-        target.append(line)
-
 count = 0
-text = []
+empty = []
 with open(path+"train.source", 'r', encoding='utf-8') as fin:
     for line in fin:
         # line = line.strip().split()
         line = line.strip()
         token = sent_tokenize(line)
-        if len(token) == 1:
-            text.append(token[0])
-        elif len(token) > 1:
-            text.append(token[0]+token[1])
-        else:
-            print(target[count])
+        # if len(token) == 1:
+        #     # text.append(token[0])
+        # elif len(token) > 1:
+        #     # text.append(token[0]+token[1])
+        if len(token) == 0:
+            empty.append(count)
         count += 1
+
+# with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
+#     for t in text:
+#         fout.write(t)
+#         fout.write('\n')
+
+
+count = 0
+target = []
+with open(path+"train.target", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        if count not in empty:
+            line = line.strip()
+            target.append(line)
+    count += 1
+
+with open(path+"train.target.pre", 'w', encoding='utf-8') as fout:
+    for t in target:
+        fout.write(t)
+        fout.write('\n')
 
 
 # with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
