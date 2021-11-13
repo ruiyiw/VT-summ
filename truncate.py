@@ -22,9 +22,9 @@
 # # # data_loader_tra, data_loader_val, data_loader_tst, vocab, program_number = prepare_data_seq(batch_size=config.batch_size)
 # # data_loader_tra, data_loader_val, data_loader_tst, vocab = prepare_data_seq(batch_size=config.batch_size) # data_loader with batch
 # # logging.info("dataloader size - tra: {} dev: {} tst: {}".format(data_loader_tra.__len__(), data_loader_val.__len__(), data_loader_tst.__len__()))
-# import nltk
-# nltk.download('punkt')
-# from nltk.tokenize import sent_tokenize
+import nltk
+nltk.download('punkt')
+from nltk.tokenize import sent_tokenize
 # import logging
 
 # # sentence = "Hello world . Hello world ! Hello world ?"
@@ -32,20 +32,29 @@
 # # print(token)
 # # text = token[0]+token[1]
 # # print(text)
-# path = "data/cnn_dm_data/"
-# count = 0
-# text = []
-# with open(path+"train.source", 'r', encoding='utf-8') as fin:
-#     for line in fin:
-#         # line = line.strip().split()
-#         line = line.strip()
-#         token = sent_tokenize(line)
-#         if len(token) == 1:
-#             text.append(token[0])
-#             count += 1
-#         elif len(token) > 1:
-#             text.append(token[0]+token[1])
-#             count += 1
+path = "data/cnn_dm_data/"
+
+target = []
+with open(path+"train.target", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        line = line.strip()
+        target.append(line)
+
+count = 0
+text = []
+with open(path+"train.source", 'r', encoding='utf-8') as fin:
+    for line in fin:
+        # line = line.strip().split()
+        line = line.strip()
+        token = sent_tokenize(line)
+        if len(token) == 1:
+            text.append(token[0])
+        elif len(token) > 1:
+            text.append(token[0]+token[1])
+        else:
+            print(target[count])
+        count += 1
+
 
 # with open(path+"train.source.pre", 'w', encoding='utf-8') as fout:
 #     for t in text:
