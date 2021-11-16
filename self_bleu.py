@@ -11,8 +11,11 @@ from nltk.tokenize import word_tokenize
 # ref = "save/trs-128/ref_e.txt"
 # hyp = "tmp/gvt-64-pre/cvae_trs_e299/hyp_e1000.txt"
 # ref = "tmp/gvt-64-pre/cvae_trs_e299/ref_e1000.txt"
-hyp = "save/gvt-128-nopre/hyp.txt"
-ref = "save/gvt-128-nopre/ref.txt"
+# hyp = "save/gvt-128-nopre/hyp.txt"
+# ref = "save/gvt-128-nopre/ref.txt"
+hyp = "save/cvae_t2/hyp.txt"
+ref = "save/cvae_t2/ref.txt"
+
 h = []
 with open(hyp, 'r', encoding='utf-8') as hfile:
     for line in hfile:
