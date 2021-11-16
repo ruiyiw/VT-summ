@@ -35,5 +35,5 @@ score_b = bleu.get_score(h)
 self_bleu = SelfBLEU(h, weights)
 score_s = self_bleu.get_score()
 
-print("D-2: {} D-3: {} D-4: {}".format(sum(score_b['bigram'])/len(h), sum(score_b['trigram'])/len(h), sum(score_b['4gram'])/len(h), sum(score_b['5gram'])/len(h),))
-print("S-2: {} S-3: {} D-4: {}".format(sum(score_s['bigram'])/len(h), sum(score_s['trigram'])/len(h), sum(score_b['4gram'])/len(h), sum(score_b['5gram'])/len(h),))
+print("D-2: {} D-3: {} D-4: {} D-5: {}".format(sum(score_b['bigram'])/len(h), sum(score_b['trigram'])/len(h), sum(score_b['4gram'])/len(h), sum(score_b['5gram'])/len(h),))
+print("S-2: {} S-3: {} D-4: {} D-5: {}".format(sum(score_s['bigram'])/len(h), sum(score_s['trigram'])/len(h), sum(score_b['4gram'])/len(h), sum(score_b['5gram'])/len(h),))
