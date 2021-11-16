@@ -7,8 +7,10 @@ from nltk.tokenize import word_tokenize
 
 # hyp = "save/gvt-128-pre/pre-trs-1000/hyp_e576.txt"
 # ref = "save/gvt-128-pre/pre-trs-1000/ref_e576.txt"
-hyp = "save/trs-128/hyp_e.txt"
-ref = "save/trs-128/ref_e.txt"
+# hyp = "save/trs-128/hyp_e.txt"
+# ref = "save/trs-128/ref_e.txt"
+hyp = "tmp/gvt-64-pre/cvae_trs_e299/hyp_e1000.txt"
+ref = "tmp/gvt-64-pre/cvae_trs_e299/ref_e1000.txt"
 
 h = []
 with open(hyp, 'r', encoding='utf-8') as hfile:
