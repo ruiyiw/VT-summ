@@ -25,7 +25,7 @@ with open(ref, 'r', encoding='utf-8') as rfile:
         word = word_tokenize(line)
         r.append(word)
 
-weights = {'unigram': (1.), 'bigram': (1/2., 1/2.), 'trigram': (1/3., 1/3., 1/3.)}
+weights = {'bigram': (1/2., 1/2.), 'trigram': (1/3., 1/3., 1/3.)}
 
 bleu = BLEU(r, weights)
 score_b = bleu.get_score(h)
