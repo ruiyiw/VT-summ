@@ -5,8 +5,8 @@ nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 
-hyp = "save/trs-128/hyp.txt"
-ref = "save/trs-128/ref.txt"
+hyp = "save/gvt-128-pre/pre-trs-1000/hyp.txt"
+ref = "save/gvt-128-pre/pre-trs-1000/ref.txt"
 
 h = []
 with open(hyp, 'r', encoding='utf-8') as hfile:
