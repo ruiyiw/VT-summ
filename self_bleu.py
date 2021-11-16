@@ -5,10 +5,10 @@ nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 
-hyp = "save/gvt-128-pre/pre-trs-1000/hyp_e576.txt"
-ref = "save/gvt-128-pre/pre-trs-1000/ref_e576.txt"
-# hyp = "save/trs-128/hyp.txt"
-# ref = "save/trs-128/ref.txt"
+# hyp = "save/gvt-128-pre/pre-trs-1000/hyp_e576.txt"
+# ref = "save/gvt-128-pre/pre-trs-1000/ref_e576.txt"
+hyp = "save/trs-128/hyp_e.txt"
+ref = "save/trs-128/ref_e.txt"
 
 h = []
 with open(hyp, 'r', encoding='utf-8') as hfile:
